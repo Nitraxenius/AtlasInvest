@@ -1,0 +1,2631 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-06T19:47:39Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 257816658,
+  "lat": 47.4287137,
+  "lon": 0.7085959,
+  "tags": {
+    "branch": "Tours Nord",
+    "brand": "Biocoop",
+    "brand:wikidata": "Q2904039",
+    "brand:wikipedia": "fr:Biocoop",
+    "bulk_purchase": "yes",
+    "contact:city": "Tours",
+    "contact:housenumber": "15",
+    "contact:postcode": "37100",
+    "contact:street": "Rue Arthur Rimbaud",
+    "description": "Alimentation, Cosmétiques et Droguerie Biologique",
+    "email": "contact@biocoop37.com",
+    "name": "Biocoop",
+    "note": "Pour les horaires d'ouverture des jours fériés, consulter biocoop37.com",
+    "opening_hours": "Mo-Sa 09:30-19:30",
+    "operator": "Salut Terre",
+    "organic": "only",
+    "phone": "+33 2 47 51 95 76",
+    "ref:FR:SIRET": "48459952700021",
+    "shop": "supermarket",
+    "source:start_date": "website",
+    "start_date": "2005",
+    "website": "https://toursnord-chambray.biocoop.net",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 627499484,
+  "lat": 47.3690664,
+  "lon": 0.7078288,
+  "tags": {
+    "branch": "Tours Fontaines",
+    "brand": "Carrefour Market",
+    "brand:wikidata": "Q2689639",
+    "brand:wikipedia": "fr:Carrefour Market",
+    "contact:city": "Tours",
+    "contact:postcode": "37200",
+    "contact:street": "Avenue Stendhal",
+    "level": "0",
+    "name": "Carrefour Market",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 09:00-12:30",
+    "operator": "Carrefour",
+    "phone": "+33 2 47 28 50 65",
+    "post_office": "post_partner",
+    "post_office:brand": "La Poste",
+    "post_office:brand:wikipedia": "fr:La Poste (entreprise française)",
+    "ref:FR:LaPoste": "22790D",
+    "ref:FR:SIRET": "88841654200015",
+    "shop": "supermarket",
+    "source:opening_hours": "website",
+    "source:post_office": "La Poste - 2026-07",
+    "website": "https://www.carrefour.fr/magasin/market-tours-fontaines",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1149140057,
+  "lat": 47.3852569,
+  "lon": 0.6920657,
+  "tags": {
+    "bulk_purchase": "yes",
+    "check_date": "2026-06-28",
+    "check_date:opening_hours": "2026-06-28",
+    "contact:housenumber": "17",
+    "contact:phone": "+33 2 47 66 77 77",
+    "contact:postcode": "37000",
+    "contact:street": "Rue Chalmel",
+    "contact:website": "http://www.coopnature.com/",
+    "name": "Coop Nature",
+    "opening_hours": "Mo 14:00-19:00; Tu-Sa 09:00-19:00",
+    "organic": "only",
+    "ref:FR:SIRET": "31977560700058",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1153844085,
+  "lat": 47.3920007,
+  "lon": 0.6879957,
+  "tags": {
+    "brand": "Monoprix",
+    "brand:wikidata": "Q3321241",
+    "brand:wikipedia": "fr:Monoprix (France)",
+    "check_date": "2025-05-30",
+    "check_date:opening_hours": "2025-06-25",
+    "description": "Attention, le dimanche 13:00-18:45, paiements exclusivement aux caisses automatiques (CB et espèces uniquement)",
+    "name": "Monoprix",
+    "opening_hours": "Mo-Sa 09:00-20:45; Su 09:00-18:45",
+    "operator": "Groupe Casino",
+    "phone": "+33 2 47 61 96 00",
+    "ref:FR:SIREN": "552083297",
+    "ref:FR:SIRET": "55208329702685",
+    "shop": "supermarket",
+    "source:opening_hours": "vitrine",
+    "website": "https://www.monoprix.fr/1334.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2344227194,
+  "lat": 47.3933098,
+  "lon": 0.6886554,
+  "tags": {
+    "addr:city": "Tours",
+    "addr:housenumber": "6",
+    "addr:postcode": "37000",
+    "addr:street": "Rue Émile Zola",
+    "air_conditioning": "yes",
+    "brand": "Biocoop",
+    "brand:wikidata": "Q2904039",
+    "bulk_purchase": "yes",
+    "check_date:opening_hours": "2026-01-08",
+    "contact:facebook": "https://fr-fr.facebook.com/BioCiteTours/",
+    "contact:phone": "+33 2 47 05 17 67",
+    "contact:website": "https://www.biocoop.fr/centre-val-de-loire/indre-et-loire/TOURS/BIOCOOP-BIOCITE",
+    "currency:XLT": "GBAR",
+    "name": "Biocoop",
+    "opening_hours": "Mo-Sa 10:00-19:30; PH off",
+    "organic": "only",
+    "payment:cash:XLT-GBAR": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "ref:FR:NAF": "47.11B",
+    "ref:FR:SIREN": "532872173",
+    "ref:FR:SIRET": "53287217300010",
+    "ref:vatin": "FR77 532872173",
+    "shop": "supermarket",
+    "source:opening_hours": "vitrine",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2367668335,
+  "lat": 47.4397607,
+  "lon": 0.6985449,
+  "tags": {
+    "air_conditioning": "yes",
+    "brand": "Intermarché",
+    "brand:wikidata": "Q3153200",
+    "brand:wikipedia": "fr:Intermarché",
+    "name": "Intermarché",
+    "opening_hours": "Mo-Sa 07:30-19:30; Su 08:00-12:30",
+    "operator": "Groupement des Mousquetaires",
+    "shop": "supermarket",
+    "website": "https://www.intermarche.com/magasins/09117/notre-dame-d-oe-37390/infos-pratiques"
+  }
+},
+{
+  "type": "node",
+  "id": 2560256022,
+  "lat": 47.3904846,
+  "lon": 0.6738683,
+  "tags": {
+    "alt_name": "Supermarché Score",
+    "brand": "Proxi",
+    "brand:wikidata": "Q3408522",
+    "contact:city": "Tours",
+    "contact:housenumber": "33",
+    "contact:postcode": "37000",
+    "contact:street": "Rue Léon Boyer",
+    "name": "Proxi Super",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "ref:FR:SIRET": "85102304400049",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2966664665,
+  "lat": 47.3804869,
+  "lon": 0.7145582,
+  "tags": {
+    "addr:city": "Saint-Pierre-des-Corps",
+    "addr:postcode": "37700",
+    "brand": "Carrefour",
+    "brand:wikidata": "Q217599",
+    "brand:wikipedia": "fr:Carrefour (enseigne)",
+    "check_date": "2025-11-23",
+    "check_date:opening_hours": "2025-11-23",
+    "drive_through": "yes",
+    "name": "Carrefour",
+    "opening_hours": "Mo-Sa 08:30-21:30; Su 08:30-12:30",
+    "operator": "Carrefour",
+    "shop": "supermarket",
+    "website": "https://www.carrefour.fr/magasin/tours-saint-pierre-des-corps",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3080453934,
+  "lat": 47.3495212,
+  "lon": 0.6489784,
+  "tags": {
+    "brand": "Netto",
+    "brand:wikidata": "Q2720988",
+    "brand:wikipedia": "fr:Netto",
+    "name": "Netto",
+    "opening_hours": "Mo-Sa 08:30-19:30",
+    "phone": "+33 2 47 53 48 85",
+    "shop": "supermarket",
+    "website": "https://magasin.netto.fr/142-netto-joue-les-tours"
+  }
+},
+{
+  "type": "node",
+  "id": 3577423313,
+  "lat": 47.3924150,
+  "lon": 0.6791433,
+  "tags": {
+    "brand": "E.Leclerc Express",
+    "brand:wikidata": "Q1273376",
+    "check_date:opening_hours": "2026-08-17",
+    "contact:city": "Tours",
+    "contact:housenumber": "5",
+    "contact:postcode": "37000",
+    "contact:street": "Place des Halles",
+    "name": "E.Leclerc Express",
+    "opening_hours": "Mo-Sa 08:00-20:00; Su 09:00-12:30",
+    "panoramax": "b879eb45-e034-4674-9fbe-a9442b2c8958",
+    "phone": "+33 2 47 48 30 40",
+    "ref:FR:SIRET": "32187637700078",
+    "shop": "supermarket",
+    "source:opening_hours": "website",
+    "website": "https://www.e.leclerc/mag/e-leclerc-les-halles",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3645113235,
+  "lat": 47.3838865,
+  "lon": 0.6767378,
+  "tags": {
+    "branch": "Rabelais Tours",
+    "brand": "Auchan Supermarché",
+    "brand:wikidata": "Q105857776",
+    "check_date": "2023-11-24",
+    "check_date:opening_hours": "2026-08-29",
+    "contact:city": "Tours",
+    "contact:housenumber": "115 bis",
+    "contact:postcode": "37000",
+    "contact:street": "Rue Giraudeau",
+    "fixme": "Le site internet indique une ouverture le dimanche après-midi.",
+    "name": "Auchan Supermarché",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:30",
+    "panoramax": "97c1ff19-4701-4b20-849a-3bed7464fd8a",
+    "phone": "+33 2 47 37 65 36",
+    "ref:FR:SIRET": "41040901501525",
+    "shop": "supermarket",
+    "website": "https://www.auchan.fr/magasins/supermarche/auchan-supermarche-rabelais-tours/s-1140"
+  }
+},
+{
+  "type": "node",
+  "id": 3770549626,
+  "lat": 48.0802357,
+  "lon": -0.8007536,
+  "tags": {
+    "addr:housenumber": "46",
+    "addr:street": "Avenue du Maréchal de Lattre de Tassigny",
+    "brand": "Carrefour",
+    "brand:wikidata": "Q217599",
+    "brand:wikipedia": "fr:Carrefour (enseigne)",
+    "name": "Carrefour",
+    "opening_hours": "Mo-Sa 08:30-21:00; Su 08:30-12:30",
+    "operator": "Carrefour",
+    "phone": "+33 2 43 91 68 79",
+    "shop": "supermarket",
+    "stroller": "yes",
+    "website": "https://www.carrefour.fr/magasin/laval",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3786000774,
+  "lat": 48.0714160,
+  "lon": -0.7961850,
+  "tags": {
+    "addr:housenumber": "36",
+    "addr:street": "Rue Émile Brault",
+    "brand": "Grand Frais",
+    "brand:wikidata": "Q3114675",
+    "brand:wikipedia": "fr:Grand Frais",
+    "name": "Grand Frais",
+    "opening_hours": "Mo-Sa 09:00-19:30; Su 09:00-12:30",
+    "phone": "+33 2 43 56 03 31",
+    "shop": "supermarket",
+    "website": "https://www.grandfrais.com/magasins/laval"
+  }
+},
+{
+  "type": "node",
+  "id": 3935762102,
+  "lat": 47.4225165,
+  "lon": 0.7015220,
+  "tags": {
+    "brand": "ALDI",
+    "brand:wikidata": "Q41171373",
+    "brand:wikipedia": "en:Aldi",
+    "check_date": "2024-07-07",
+    "fixme": "ALDI",
+    "name": "ALDI",
+    "opening_hours": "Mo-Sa 08:30-19:30; Su 08:30-12:30",
+    "ref:FR:SIRET": "44433078101392",
+    "shop": "supermarket",
+    "website": "https://www.aldi.fr/magasins-et-horaires-d-ouverture/tours/9-rue-marechal-joffre/3435237.html"
+  }
+},
+{
+  "type": "node",
+  "id": 3935812775,
+  "lat": 47.4251621,
+  "lon": 0.6994160,
+  "tags": {
+    "brand": "Auchan Drive",
+    "brand:wikidata": "Q2870659",
+    "check_date:opening_hours": "2026-08-29",
+    "contact:housenumber": "272",
+    "contact:street": "Avenue André Maginot",
+    "drive_through": "only",
+    "name": "Auchan Drive",
+    "opening_hours": "Mo-Sa 07:30-20:30; Su 08:30-12:30",
+    "phone": "+33 2 18 24 06 50",
+    "ref:FR:SIRET": "41040946002448",
+    "shop": "supermarket",
+    "source:opening_hours": "website",
+    "website": "https://www.auchan.fr/magasins/drive/auchan-drive-tours-nord/s-544"
+  }
+},
+{
+  "type": "node",
+  "id": 4290857006,
+  "lat": 48.0763683,
+  "lon": -0.7608901,
+  "tags": {
+    "name": "Laval",
+    "official_name": "Laval",
+    "operator": "SNCF Gares & Connexions",
+    "operator:wikidata": "Q3098278",
+    "operator:wikipedia": "fr:SNCF Gares & Connexions",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "LAL",
+    "railway:ref:DB": "XFLAL",
+    "ref:FR:sncf:resarail": "FRACR",
+    "train": "yes",
+    "uic_ref": "8747840",
+    "wheelchair": "yes",
+    "wikidata": "Q3096443"
+  }
+},
+{
+  "type": "node",
+  "id": 4455741754,
+  "lat": 47.3952657,
+  "lon": 0.6844472,
+  "tags": {
+    "brand": "Coccinelle Express",
+    "brand:website": "https://www.coccinelle.fr/",
+    "brand:wikidata": "Q90020479",
+    "check_date:opening_hours": "2026-05-03",
+    "contact:city": "Tours",
+    "contact:housenumber": "12-14",
+    "contact:postcode": "37000",
+    "contact:street": "Rue Constantine",
+    "name": "Coccinelle Express",
+    "opening_hours": "Mo-Su 09:00-20:00",
+    "opening_hours:signed": "no",
+    "operator": "Cocci Market",
+    "phone": "+33 2 47 61 04 17",
+    "ref:FR:SIRET": "82281360600024",
+    "shop": "supermarket",
+    "website": "https://www.coccinelle.fr/magasin/tours"
+  }
+},
+{
+  "type": "node",
+  "id": 4466271365,
+  "lat": 47.4158216,
+  "lon": 0.6895363,
+  "tags": {
+    "contact:city": "Tours",
+    "contact:housenumber": "85 ter",
+    "contact:postcode": "37100",
+    "contact:street": "Avenue André Maginot",
+    "cuisine": "asian",
+    "name": "Asia Market",
+    "opening_hours": "Mo-Sa 09:30-20:00; Su 09:30-14:00",
+    "ref:FR:SIRET": "81231384900018",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4550029282,
+  "lat": 47.3894316,
+  "lon": 0.6939293,
+  "tags": {
+    "alt_name:ar": "طرش;ترش",
+    "importance": "national",
+    "name": "Tours",
+    "name:ar": "تور",
+    "name:br": "Teurgn",
+    "note": "Please do not add the tag public_transport=station, it is already on the way that defines the footprint of the station",
+    "official_name": "Tours",
+    "operator": "SNCF Gares & Connexions",
+    "operator:wikidata": "Q3098278",
+    "operator:wikipedia": "fr:SNCF Gares & Connexions",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "TO",
+    "ref:FR:sncf:resarail": "FRAFW",
+    "ref:FR:uic8": "87571000",
+    "source": "SNCF - 06/2013",
+    "train": "yes",
+    "uic_ref": "8757100",
+    "wheelchair": "yes",
+    "wikidata": "Q1876295",
+    "wikipedia": "fr:Gare de Tours"
+  }
+},
+{
+  "type": "node",
+  "id": 4611171010,
+  "lat": 48.0634629,
+  "lon": -0.8091592,
+  "tags": {
+    "addr:city": "Saint-Berthevin",
+    "addr:housenumber": "62",
+    "addr:postcode": "53940",
+    "addr:street": "Boulevard Louis Armand",
+    "brand": "E.Leclerc",
+    "brand:website": "https://www.e-leclerc.com",
+    "brand:wikidata": "Q1273376",
+    "brand:wikipedia": "en:E.Leclerc",
+    "contact:fax": "+33 2 43 90 78 35",
+    "name": "E.Leclerc",
+    "opening_hours": "Mo-Sa 08:30-20:00",
+    "operator": "Laval Distribution",
+    "phone": "+33 2 43 64 62 00",
+    "shop": "supermarket",
+    "website": "https://www.e.leclerc/mag/e-leclerc-saint-berthevin"
+  }
+},
+{
+  "type": "node",
+  "id": 4876799495,
+  "lat": 48.0712751,
+  "lon": -0.7503965,
+  "tags": {
+    "brand": "Biocoop",
+    "brand:wikidata": "Q2904039",
+    "brand:wikipedia": "fr:Biocoop",
+    "bulk_purchase": "yes",
+    "contact:city": "Laval",
+    "contact:housenumber": "28",
+    "contact:phone": "+33 2 43 67 92 30",
+    "contact:postcode": "53000",
+    "contact:street": "Boulevard de l'Industrie",
+    "email": "lavalest@biocoopmbs53.fr",
+    "name": "Biocoop",
+    "official_name": "Biocoop Laval Est",
+    "opening_hours": "Mo-Sa 09:00-19:30",
+    "organic": "only",
+    "ref:FR:SIRET": "35124797800072",
+    "shop": "supermarket",
+    "website": "https://mayennebiosoleil.biocoop.net/presentation-detaillee/biocoop-laval-est"
+  }
+},
+{
+  "type": "node",
+  "id": 5613774869,
+  "lat": 47.4238121,
+  "lon": 0.6592363,
+  "tags": {
+    "addr:city": "Saint-Cyr-sur-Loire",
+    "addr:housenumber": "243",
+    "addr:postcode": "37540",
+    "addr:street": "Boulevard Charles de Gaulle",
+    "brand": "Le Marché de Léopold",
+    "bulk_purchase": "yes",
+    "contact:facebook": "https://www.facebook.com/lemarchedeleopold",
+    "name": "Le Marché de Léopold",
+    "organic": "only",
+    "shop": "supermarket",
+    "website": "https://www.lemarchedeleopold.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 6373049188,
+  "lat": 47.3884973,
+  "lon": 0.6905078,
+  "tags": {
+    "addr:city": "Tours",
+    "addr:postcode": "37000",
+    "addr:street": "Rue Charles Gille",
+    "brand": "Intermarché",
+    "brand:wikidata": "Q3153200",
+    "brand:wikipedia": "fr:Intermarché",
+    "check_date": "2026-09-25",
+    "contact:city": "Tours",
+    "contact:housenumber": "13 Bis",
+    "contact:postcode": "37000",
+    "contact:street": "Rue Charles Gille",
+    "internet_access": "wlan",
+    "internet_access:ssid": "INTERMARCHE",
+    "name": "Intermarché Express",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 09:00-12:45",
+    "operator": "Groupement des Mousquetaires",
+    "ref:FR:SIRET": "75139431300033",
+    "shop": "supermarket",
+    "website": "https://www.intermarche.com/magasins/07394/tours-37000/infos-pratiques",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6710008949,
+  "lat": 47.3892667,
+  "lon": 0.6959985,
+  "tags": {
+    "branch": "Tours Gare",
+    "brand": "U Express",
+    "brand:wikidata": "Q2529029",
+    "brand:wikipedia": "en:Système U",
+    "check_date:opening_hours": "2026-09-02",
+    "name": "U Express",
+    "opening_hours": "Mo-Sa 07:30-20:30; Su 08:30-13:00",
+    "phone": "+33 2 47 70 50 50",
+    "ref:FR:SIRET": "52111403300025",
+    "shop": "supermarket",
+    "website": "https://www.magasins-u.com/magasin/uexpress-toursgare",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6817129177,
+  "lat": 47.4257615,
+  "lon": 0.6735884,
+  "tags": {
+    "addr:housenumber": "205",
+    "addr:street": "Rue des Bordiers",
+    "brand": "Centre Commercial E.Leclerc",
+    "brand:wikidata": "Q1273376",
+    "brand:wikipedia": "fr:E.Leclerc",
+    "check_date:opening_hours": "2025-07-28",
+    "contact:city": "Tours",
+    "contact:housenumber": "205",
+    "contact:postcode": "37100",
+    "contact:street": "Rue des Bordiers",
+    "name": "Centre Commercial E.Leclerc",
+    "opening_hours": "Mo-Sa 08:30-20:00",
+    "phone": "+33 2 47 51 68 09",
+    "ref:FR:SIRET": "40237909300014",
+    "shop": "supermarket",
+    "source:opening_hours": "website",
+    "tickets:public_transport": "no",
+    "website": "https://www.e.leclerc/mag/e-leclerc-tours"
+  }
+},
+{
+  "type": "node",
+  "id": 6960862545,
+  "lat": 47.3856704,
+  "lon": 0.7237876,
+  "tags": {
+    "gtfs:stop_id:FR-SNCF": "StopArea:OCE87571240",
+    "name": "Saint-Pierre-des-Corps",
+    "network": "TER Centre − Val de Loire",
+    "network:wikidata": "Q912775",
+    "official_name": "Saint-Pierre-des-Corps",
+    "operator": "SNCF Gares & Connexions",
+    "operator:wikidata": "Q3098278",
+    "operator:wikipedia": "fr:SNCF Gares & Connexions",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "SP",
+    "ref:FR:sncf:resarail": "FRXSH",
+    "source": "SNCF - 08/2017",
+    "train": "yes",
+    "uic_ref": "8757124",
+    "wheelchair": "yes",
+    "wikidata": "Q3097610",
+    "wikipedia": "fr:Gare de Saint-Pierre-des-Corps"
+  }
+},
+{
+  "type": "node",
+  "id": 7355116349,
+  "lat": 48.0697840,
+  "lon": -0.7981912,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Rue Simone Veil",
+    "brand": "ALDI",
+    "brand:wikidata": "Q41171373",
+    "brand:wikipedia": "en:Aldi",
+    "name": "ALDI",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:30",
+    "shop": "supermarket",
+    "website": "https://www.aldi.fr/magasins-et-horaires-d-ouverture/laval/3-rue-simone-veil/3435759.html"
+  }
+},
+{
+  "type": "node",
+  "id": 7873636115,
+  "lat": 47.3444164,
+  "lon": 0.6446798,
+  "tags": {
+    "brand": "Super U",
+    "brand:wikidata": "Q2529029",
+    "brand:wikipedia": "en:Système U",
+    "drive_through": "yes",
+    "name": "Drive Super U",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 7905735083,
+  "lat": 47.3511612,
+  "lon": 0.6632548,
+  "tags": {
+    "brand": "Food Basics",
+    "brand:wikidata": "Q5465300",
+    "level": "0",
+    "name": "Exo-Aliments",
+    "shop": "supermarket",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8067040245,
+  "lat": 48.0689777,
+  "lon": -0.8011025,
+  "tags": {
+    "name": "Le Marché de Beaufeu",
+    "shop": "supermarket",
+    "website": "https://www.lemarchedebeaufeu.fr/"
+  }
+},
+{
+  "type": "node",
+  "id": 8297432015,
+  "lat": 48.0693104,
+  "lon": -0.8083241,
+  "tags": {
+    "addr:postcode": "53940",
+    "name": "Bon d'ici",
+    "organic": "only",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 10584337069,
+  "lat": 47.3429221,
+  "lon": 0.6260326,
+  "tags": {
+    "addr:city": "Joué-lès-Tours",
+    "addr:housenumber": "1",
+    "addr:postcode": "37300",
+    "addr:street": "Rue de Freyssinet",
+    "brand": "So.bio",
+    "brand:website": "https://www.sobio.fr",
+    "brand:wikidata": "Q141195843",
+    "name": "So.bio Joué-lès-Tours",
+    "opening_hours": "Mo-Sa 09:30-19:30",
+    "operator": "So.bio",
+    "organic": "only",
+    "phone": "+33 2 47 48 42 80",
+    "ref:FR:SIRET": "49930885601766",
+    "shop": "supermarket",
+    "website": "https://www.sobio.fr/magasin/so-bio-joue-les-tours"
+  }
+},
+{
+  "type": "node",
+  "id": 10802671514,
+  "lat": 48.0805648,
+  "lon": -0.8001181,
+  "tags": {
+    "branch": "drive",
+    "brand": "Carrefour",
+    "brand:wikidata": "Q217599",
+    "name": "Carrefour Drive",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 10946118405,
+  "lat": 48.0661950,
+  "lon": -0.8128158,
+  "tags": {
+    "addr:city": "Saint-Berthevin",
+    "addr:housenumber": "20",
+    "addr:postcode": "53940",
+    "addr:street": "Boulevard des Loges",
+    "brand": "Biocoop",
+    "brand:wikidata": "Q2904039",
+    "contact:city": "Saint-Berthevin",
+    "contact:housenumber": "20",
+    "contact:phone": "+33 2 59 29 09 30",
+    "contact:postcode": "53940",
+    "contact:street": "Boulevard Des Loges",
+    "name": "Biocoop",
+    "opening_hours": "Mo-Sa 09:00-19:30",
+    "operator": "MAYENNE BIO SOLEIL",
+    "organic": "only",
+    "ref:FR:SIRET": "35124797800106",
+    "shop": "supermarket",
+    "website": "https://mayennebiosoleil.biocoop.net/presentation-detaillee/biocoop-saint-berthevin"
+  }
+},
+{
+  "type": "node",
+  "id": 11525108141,
+  "lat": 47.3755272,
+  "lon": 0.6720285,
+  "tags": {
+    "contact:email": "contact@le-troglo.fr",
+    "contact:facebook": "https://www.facebook.com/LeTroglo/",
+    "contact:housenumber": "15",
+    "contact:instagram": "https://www.instagram.com/letroglo/",
+    "contact:linkedin": "https://www.linkedin.com/company/le-troglo-tours/?originalSubdomain=fr",
+    "contact:phone": "+33 2 46 46 91 83",
+    "contact:street": "Boulevard Louis XI",
+    "contact:website": "https://www.le-troglo.fr",
+    "description": "Supermarché coopératif et participatif de Tours",
+    "fixme": "septembre 2025 : fermeture annoncée, surveiller fermeture effective pour modif",
+    "name": "Le Troglo",
+    "note": "Il faut être coopérateur et participer pour pouvoir venir faire ses courses ici.",
+    "opening_hours": "Mo 14:00-20:00; Tu-Fr 09:30-20:00; Sa 09:30-17:00",
+    "ref:FR:SIRET": "89842822200019",
+    "shop": "supermarket",
+    "start_date": "2023-04"
+  }
+},
+{
+  "type": "node",
+  "id": 11599384852,
+  "lat": 47.3542719,
+  "lon": 0.6676538,
+  "tags": {
+    "addr:city": "Joué-lès-Tours",
+    "addr:postcode": "37300",
+    "addr:street": "Rue de Béguine",
+    "name": "Joué-les-Tours",
+    "network": "TER Centre − Val de Loire",
+    "network:wikidata": "Q912775",
+    "official_name": "Joué-lès-Tours",
+    "operator": "SNCF Gares & Connexions",
+    "operator:wikidata": "Q3098278",
+    "operator:wikipedia": "fr:SNCF Gares & Connexions",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "JLT",
+    "ref:FR:sncf:resarail": "FRJLT",
+    "train": "yes",
+    "uic_ref": "8757188",
+    "wikidata": "Q405631",
+    "wikipedia": "fr:Gare de Joué-lès-Tours"
+  }
+},
+{
+  "type": "node",
+  "id": 11662246553,
+  "lat": 47.3834292,
+  "lon": 0.6976568,
+  "tags": {
+    "brand": "Netto",
+    "brand:wikidata": "Q2720988",
+    "contact:city": "Tours",
+    "contact:housenumber": "11",
+    "contact:postcode": "37000",
+    "contact:street": "Place Neuve",
+    "name": "Netto",
+    "opening_hours": "Mo-Sa 09:00-19:30",
+    "phone": "+33 2 46 99 14 44",
+    "ref:FR:SIRET": "98086027400011",
+    "shop": "supermarket",
+    "website": "https://magasin.netto.fr/520-netto-palais-des-sports"
+  }
+},
+{
+  "type": "node",
+  "id": 12018214933,
+  "lat": 47.3732677,
+  "lon": 0.6936879,
+  "tags": {
+    "check_date": "2024-06-28",
+    "contact:city": "Tours",
+    "contact:facebook": "https://www.facebook.com/Diagonaltoursverdun/",
+    "contact:housenumber": "3",
+    "contact:postcode": "37000",
+    "contact:street": "Rue Toulouse-Lautrec",
+    "email": "Diagonal.toursverdun@gmail.com",
+    "name": "Supermarché Diagonal",
+    "opening_hours": "Mo-Sa 07:30-19:15; Su 08:00-12:15",
+    "phone": "+33 2 47 61 38 79",
+    "ref:FR:SIRET": "10471832500012",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 12456498418,
+  "lat": 47.3971678,
+  "lon": 0.7441948,
+  "tags": {
+    "brand": "Nosso",
+    "brand:website": "https://nosso.fr",
+    "contact:housenumber": "217",
+    "contact:street": "Rue Marcel Cachin",
+    "description": "Supermarché et traiteur portugais",
+    "name": "Nosso",
+    "origin": "portuguese",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 12522732810,
+  "lat": 48.0550429,
+  "lon": -0.7341954,
+  "tags": {
+    "brand": "E.Leclerc",
+    "brand:wikidata": "Q1273376",
+    "name": "E.Leclerc",
+    "opening_hours": "Mo-Sa 08:30-20:00",
+    "shop": "supermarket",
+    "website": "https://www.e.leclerc/mag/e-leclerc-laval"
+  }
+},
+{
+  "type": "node",
+  "id": 13026264577,
+  "lat": 47.3796391,
+  "lon": 0.6944690,
+  "tags": {
+    "brand": "Lidl",
+    "brand:website": "http://www.lidl.fr",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "fr:Lidl",
+    "check_date": "2025-05-01",
+    "check_date:opening_hours": "2026-09-01",
+    "contact:city": "Tours",
+    "contact:housenumber": "19 bis",
+    "contact:postcode": "37000",
+    "contact:street": "Avenue du Général de Gaulle",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:15",
+    "panoramax": "49a4b592-624b-4bd6-8e25-b1414ecf0783",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262206161",
+    "shop": "supermarket",
+    "source:opening_hours": "website",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/tours/bis-rue-general-de-gaulle-19/"
+  }
+},
+{
+  "type": "way",
+  "id": 63372362,
+  "center": {
+    "lat": 47.4260507,
+    "lon": 0.6578261
+  },
+  "nodes": [
+    785269517,
+    785325000,
+    10702657925,
+    10702657921,
+    785562239,
+    10702658320,
+    12635644347,
+    10702657926,
+    10702658324,
+    10702658011,
+    785263814,
+    785325480,
+    785374708,
+    10702657905,
+    12635644330,
+    785221982,
+    785555066,
+    785446200,
+    10702658008,
+    10702657909,
+    785574601,
+    12635644339,
+    785300288,
+    785277625,
+    10702658415,
+    10702658023,
+    785289317,
+    785288632,
+    2085641784,
+    785300821,
+    785228734,
+    785312043,
+    785502149,
+    785250544,
+    785269517
+  ],
+  "tags": {
+    "addr:housenumber": "243",
+    "addr:postcode": "37540",
+    "addr:street": "Boulevard Charles de Gaulle",
+    "brand": "Auchan",
+    "brand:wikidata": "Q758603",
+    "building": "retail",
+    "name": "Auchan",
+    "opening_hours": "Mo-Sa 08:30-21:30; Su 09:00-12:30",
+    "operator:wikidata": "Q758603",
+    "operator:wikipedia": "fr:Auchan",
+    "shop": "supermarket",
+    "shop_1": "mall",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.auchan.fr/magasins/hypermarche/auchan-hypermarche-tours-saint-cyr-sur-loire/s-144"
+  }
+},
+{
+  "type": "way",
+  "id": 67773836,
+  "center": {
+    "lat": 48.0774685,
+    "lon": -0.7998071
+  },
+  "nodes": [
+    818090063,
+    818228543,
+    818192763,
+    818354083,
+    818205594,
+    818234153,
+    818132300,
+    818090063
+  ],
+  "tags": {
+    "addr:city": "Laval",
+    "addr:housenumber": "8",
+    "addr:postcode": "53000",
+    "addr:street": "Rue de Bir-Hakeim",
+    "branch": "Mayenne Bio Soleil",
+    "brand": "Biocoop",
+    "brand:wikidata": "Q2904039",
+    "brand:wikipedia": "fr:Biocoop",
+    "building": "retail",
+    "bulk_purchase": "yes",
+    "level": "0",
+    "name": "Biocoop",
+    "opening_hours": "Mo-Sa 09:00-19:30",
+    "operator": "Josette Johan",
+    "organic": "only",
+    "phone": "+33 2 43 66 98 88",
+    "ref:FR:SIRET": "35124797800049",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://mayennebiosoleil.biocoop.net/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 67775845,
+  "center": {
+    "lat": 48.0680809,
+    "lon": -0.7606793
+  },
+  "nodes": [
+    818221323,
+    818363237,
+    818123310,
+    818128840,
+    818170721,
+    818184424,
+    818127289,
+    818283079,
+    818355587,
+    818111361,
+    818128593,
+    818345012,
+    818107473,
+    818133045,
+    818350197,
+    818098148,
+    818309897,
+    818353387,
+    818203152,
+    818215211,
+    818333862,
+    818200552,
+    818099080,
+    818185748,
+    818123168,
+    818265474,
+    818221323
+  ],
+  "tags": {
+    "addr:city": "Laval",
+    "addr:housenumber": "61",
+    "addr:postcode": "53000",
+    "addr:street": "Boulevard Félix Grat",
+    "brand": "Carrefour Market",
+    "brand:wikidata": "Q2689639",
+    "brand:wikipedia": "fr:Carrefour Market",
+    "building": "retail",
+    "delivery": "no",
+    "name": "Carrefour Market",
+    "opening_hours": "Mo-Sa 08:30-19:30",
+    "operator": "Carrefour",
+    "phone": "+33 2 43 53 49 45",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.carrefour.fr/magasin/market-laval",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 67779086,
+  "center": {
+    "lat": 48.0588861,
+    "lon": -0.7373854
+  },
+  "nodes": [
+    818135408,
+    818183966,
+    818174926,
+    818125714,
+    818263047,
+    818109480,
+    818144338,
+    818278711,
+    818125298,
+    818135408
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Promocash",
+    "opening_hours": "Mo-Fr 06:30-18:30; Sa 06:30-13:30",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 68766999,
+  "center": {
+    "lat": 47.3439558,
+    "lon": 0.7049565
+  },
+  "nodes": [
+    826343435,
+    826343301,
+    826430183,
+    826424507,
+    826373721,
+    826409799,
+    826343435
+  ],
+  "tags": {
+    "brand": "Aldi",
+    "brand:wikidata": "Q41171373",
+    "brand:wikipedia": "en:Aldi",
+    "building": "retail",
+    "check_date": "2026-07-13",
+    "check_date:opening_hours": "2026-07-13",
+    "contact:housenumber": "3",
+    "contact:street": "Rue Alexandra David Néel",
+    "name": "Aldi",
+    "opening_hours": "Mo-Sa 08:30-20:00",
+    "ref:FR:SIRET": "44433078101327",
+    "shop": "supermarket",
+    "source:geometry": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "source:opening_hours": "website",
+    "website": "https://www.aldi.fr/magasins-et-horaires-d-ouverture/chambray-les-tours/3-rue-alexandra-david-neel/3436214.html"
+  }
+},
+{
+  "type": "way",
+  "id": 68767186,
+  "center": {
+    "lat": 47.3425308,
+    "lon": 0.7284691
+  },
+  "nodes": [
+    826401376,
+    826358026,
+    826380923,
+    826408568,
+    826336489,
+    826343248,
+    826437595,
+    9171497121,
+    826441995,
+    826454045,
+    826401376
+  ],
+  "tags": {
+    "building": "retail",
+    "contact:housenumber": "13",
+    "contact:phone": "+33 2 47 36 20 20",
+    "contact:street": "Rue Augustin Fresnel",
+    "contact:website": "https://www.coopnature.com",
+    "name": "Coop Nature",
+    "opening_hours": "Mo 14:30-19:00; Tu-We 09:00-13:00,14:30-19:00; Th 09:30-13:00,14:30-19:00; Fr 09:00-13:00,14:30-19:00; Sa 09:00-13:00,14:30-18:30",
+    "organic": "yes",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 68767426,
+  "center": {
+    "lat": 47.3365604,
+    "lon": 0.7066629
+  },
+  "nodes": [
+    826430693,
+    826402008,
+    826411661,
+    826408427,
+    826372885,
+    826407874,
+    826450290,
+    826407045,
+    826338655,
+    826429017,
+    826324074,
+    826425054,
+    826408019,
+    826374248,
+    826430693
+  ],
+  "tags": {
+    "addr:housenumber": "131",
+    "addr:street": "Avenue du Grand Sud",
+    "brand": "Lidl",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "fr:Lidl",
+    "building": "retail",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-19:30; Su 08:30-12:15",
+    "operator": "Lidl",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262214751",
+    "shop": "supermarket",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/chambray-les-tours/grand-sud-avenue-131/"
+  }
+},
+{
+  "type": "way",
+  "id": 68770413,
+  "center": {
+    "lat": 47.3409357,
+    "lon": 0.7240770
+  },
+  "nodes": [
+    826440963,
+    826363117,
+    826385468,
+    826383289,
+    826375106,
+    826384283,
+    826440963
+  ],
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Jean Perrin",
+    "brand": "Netto",
+    "brand:wikidata": "Q2720988",
+    "brand:wikipedia": "fr:Netto",
+    "building": "commercial",
+    "check_date": "2026-04-03",
+    "check_date:opening_hours": "2026-04-03",
+    "name": "U express",
+    "opening_hours": "Mo-Sa 08:30-19:30; Su 09:00-12:30",
+    "operator": "Groupement des Mousquetaires",
+    "phone": "+33 2 47 55 79 65",
+    "shop": "supermarket",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "website": "https://www.magasins-u.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 68770959,
+  "center": {
+    "lat": 47.3405673,
+    "lon": 0.7008398
+  },
+  "nodes": [
+    826455847,
+    826385730,
+    826444558,
+    826369294,
+    826455847
+  ],
+  "tags": {
+    "addr:city": "Chambray-lès-Tours",
+    "addr:housenumber": "1",
+    "addr:postcode": "37170",
+    "building": "commercial",
+    "name": "Kosmo",
+    "opening_hours": "Tu-Su 09:00-20:00",
+    "ref:FR:SIRET": "89276926600024",
+    "shop": "supermarket",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 68773075,
+  "center": {
+    "lat": 47.3360532,
+    "lon": 0.7019910
+  },
+  "nodes": [
+    826324095,
+    826417555,
+    826397054,
+    826371577,
+    826395369,
+    826337378,
+    826411966,
+    826411866,
+    826324095
+  ],
+  "tags": {
+    "addr:city": "Chambray-lès-Tours",
+    "addr:housenumber": "17",
+    "addr:postcode": "37170",
+    "brand": "Biocoop",
+    "brand:wikidata": "Q2904039",
+    "brand:wikipedia": "fr:Biocoop",
+    "building": "retail",
+    "bulk_purchase": "yes",
+    "name": "Biocoop",
+    "opening_hours": "Mo-Sa 09:30-19:30",
+    "organic": "only",
+    "phone": "+33 2 47 22 97 75",
+    "ref:FR:SIRET": "82129829600012",
+    "shop": "supermarket",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "website": "https://www.biocoop37.com/chambray/"
+  }
+},
+{
+  "type": "way",
+  "id": 69382577,
+  "center": {
+    "lat": 47.4317447,
+    "lon": 0.6833598
+  },
+  "nodes": [
+    831232007,
+    2459329286,
+    831240975,
+    831243383,
+    7701369547,
+    7701369546,
+    7701369545,
+    7701369544,
+    2459333493,
+    831232092,
+    831251267,
+    7701369543,
+    831232007
+  ],
+  "tags": {
+    "building": "retail",
+    "contact:housenumber": "25",
+    "contact:street": "Rue de Hollande",
+    "name": "Coop Nature",
+    "opening_hours": "Mo 14:30-19:00; Tu-We 09:00-13:00,14:30-19:00; Th 09:30-13:00,14:30-19:00; Fr 09:00-13:00,14:30-19:00; Sa 09:00-13:00,14:30-18:30",
+    "phone": "+33 2 47 88 96 96",
+    "ref:FR:SIRET": "31977560700066",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.coopnature.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 69471401,
+  "center": {
+    "lat": 47.4128839,
+    "lon": 0.7022220
+  },
+  "nodes": [
+    831750856,
+    831789646,
+    831792147,
+    831774062,
+    831754563,
+    831793973,
+    831787042,
+    831763032,
+    831767722,
+    831763910,
+    831791265,
+    831750856
+  ],
+  "tags": {
+    "branch": "Saint-Symphorien Tours",
+    "brand": "Auchan Supermarché",
+    "brand:wikidata": "Q105857776",
+    "building": "retail",
+    "building:levels": "2",
+    "check_date:opening_hours": "2026-08-22",
+    "contact:street": "Rue Frédéric Chopin",
+    "name": "Auchan Supermarché",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 09:00-12:30",
+    "phone": "+33 2 47 41 49 11",
+    "ref:FR:SIRET": "41040901501566",
+    "roof:levels": "0",
+    "roof:shape": "flat",
+    "shop": "supermarket",
+    "source:geometry": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "source:opening_hours": "website",
+    "website": "https://www.auchan.fr/magasins/supermarche/auchan-supermarche-saint-symphorien-tours/s-1139"
+  }
+},
+{
+  "type": "way",
+  "id": 69552515,
+  "center": {
+    "lat": 47.3935208,
+    "lon": 0.6685996
+  },
+  "nodes": [
+    832388254,
+    832391759,
+    832387374,
+    832389587,
+    832386836,
+    832399867,
+    832388254
+  ],
+  "tags": {
+    "brand": "Carrefour Market",
+    "brand:wikidata": "Q2689639",
+    "brand:wikipedia": "fr:Carrefour Market",
+    "building": "retail",
+    "check_date": "2023-11-19",
+    "contact:city": "Tours",
+    "contact:housenumber": "13",
+    "contact:phone": "+33 2 47 37 01 55",
+    "contact:postcode": "37000",
+    "contact:street": "Rue du 501ème",
+    "name": "Carrefour Market",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 09:00-12:30",
+    "operator": "Carrefour",
+    "ref:FR:SIRET": "81787482900010",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.carrefour.fr/magasin/market-tours-la-riche"
+  }
+},
+{
+  "type": "way",
+  "id": 69803440,
+  "center": {
+    "lat": 47.3793592,
+    "lon": 0.7084616
+  },
+  "nodes": [
+    834479948,
+    834619182,
+    12406930048,
+    834615720,
+    9647954969,
+    9647954968,
+    9647954967,
+    9647954966,
+    834510025,
+    9647954970,
+    834505611,
+    834483244,
+    834577771,
+    12479114436,
+    9647955007,
+    9647955006,
+    9647954962,
+    834452356,
+    834555403,
+    834479948
+  ],
+  "tags": {
+    "brand": "Intermarché",
+    "brand:wikidata": "Q3153200",
+    "brand:wikipedia": "fr:Intermarché",
+    "building": "retail",
+    "building:levels": "1",
+    "check_date:opening_hours": "2023-03-17",
+    "contact:city": "Tours",
+    "contact:housenumber": "127",
+    "contact:phone": "+33 2 47 66 41 74",
+    "contact:postcode": "37000",
+    "contact:street": "Rue Édouard Vaillant",
+    "name": "Intermarché",
+    "opening_hours": "Mo-Sa 09:00-19:30; Su 09:00-12:30",
+    "operator": "Groupement des Mousquetaires",
+    "ref:FR:SIRET": "40194471500010",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "source:opening_hours": "website",
+    "website": "https://www.intermarche.com/magasins/01217/tours-37000/infos-pratiques",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 69804438,
+  "center": {
+    "lat": 47.3837909,
+    "lon": 0.6920785
+  },
+  "nodes": [
+    834546418,
+    11734741191,
+    834586940,
+    834629950,
+    13458309595,
+    834529932,
+    834445388,
+    834458280,
+    834487977,
+    11734741183,
+    834626595,
+    834505549,
+    1098864803,
+    1098864824,
+    834516635,
+    834633013,
+    834546418
+  ],
+  "tags": {
+    "branch": "Tours Grammont",
+    "brand": "Carrefour City",
+    "brand:wikidata": "Q2940187",
+    "brand:wikipedia": "fr:Carrefour City",
+    "building": "retail",
+    "building:levels": "1",
+    "contact:city": "Tours",
+    "contact:housenumber": "74",
+    "contact:postcode": "37000",
+    "contact:street": "Avenue de Grammont",
+    "name": "Carrefour City",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 09:00-13:00",
+    "operator": "Groupe Carrefour",
+    "operator:wikidata": "Q3117359",
+    "operator:wikipedia": "fr:Groupe Carrefour",
+    "phone": "+33 2 47 47 06 18",
+    "ref:FR:SIRET": "34513048823829",
+    "roof:shape": "flat",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.carrefour.fr/magasin/city-tours-grammont"
+  }
+},
+{
+  "type": "way",
+  "id": 70687877,
+  "center": {
+    "lat": 47.3881587,
+    "lon": 0.6591554
+  },
+  "nodes": [
+    843174969,
+    843195417,
+    843157533,
+    843185674,
+    843149713,
+    843176228,
+    843195446,
+    843184962,
+    843160741,
+    10959096033,
+    843174969
+  ],
+  "tags": {
+    "brand": "Lidl",
+    "brand:website": "http://www.lidl.fr",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "fr:Lidl",
+    "building": "retail",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:15",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262209223",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/la-riche/rue-du-11-novembre-1918/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 70689162,
+  "center": {
+    "lat": 47.3848907,
+    "lon": 0.6591185
+  },
+  "nodes": [
+    843170371,
+    10586284414,
+    4136180901,
+    4136180902,
+    4136180903,
+    4136180904,
+    4136180905,
+    843177226,
+    843159523,
+    843159972,
+    843163328,
+    843193127,
+    843163044,
+    843178763,
+    4136180909,
+    843148974,
+    4136180908,
+    843151171,
+    3824393708,
+    843193146,
+    4136180907,
+    3315075225,
+    4136180906,
+    843170371
+  ],
+  "tags": {
+    "brand": "Super U",
+    "brand:wikidata": "Q2529029",
+    "brand:wikipedia": "fr:Système U",
+    "building": "retail",
+    "building:levels": "1",
+    "contact:housenumber": "42",
+    "contact:phone": "+33 2 47 37 49 69",
+    "contact:street": "Rue Hautes Marches",
+    "name": "Super U",
+    "noaddress": "yes",
+    "note": "attention, on a bien une adresse de contact mais pas d'adresse physique",
+    "opening_hours": "Mo-Sa 08:30-19:30; Su 09:00-12:30",
+    "operator": "Super U",
+    "ref:FR:SIREN": "326832128",
+    "ref:FR:SIRET": "32683212800010",
+    "ref:vatin": "FR26326832128",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.magasins-u.com/magasin/superu-lariche.m37005",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 71099925,
+  "center": {
+    "lat": 47.3586876,
+    "lon": 0.6467711
+  },
+  "nodes": [
+    846701196,
+    846774754,
+    846684785,
+    846724640,
+    846667562,
+    846656748,
+    846701196
+  ],
+  "tags": {
+    "brand": "ALDI",
+    "brand:wikidata": "Q41171373",
+    "brand:wikipedia": "en:Aldi",
+    "building": "commercial",
+    "check_date": "2025-06-14",
+    "name": "ALDI",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:30",
+    "operator": "Lidl",
+    "ref:FR:RNB": "PJ18HCXFERRJ",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.aldi.fr/magasins-et-horaires-d-ouverture.html/l/joue-les-tours/6-rue-du-franc-palais/3436064"
+  }
+},
+{
+  "type": "way",
+  "id": 71100202,
+  "center": {
+    "lat": 47.3370673,
+    "lon": 0.6575052
+  },
+  "nodes": [
+    846700038,
+    846773934,
+    846644132,
+    9178448786,
+    846763996,
+    9178448783,
+    846696970,
+    846637336,
+    846674167,
+    9178448792,
+    846700038
+  ],
+  "tags": {
+    "brand": "Intermarché",
+    "brand:wikidata": "Q3153200",
+    "brand:wikipedia": "fr:Intermarché",
+    "building": "retail",
+    "name": "Intermarché",
+    "opening_hours": "Mo-Sa 08:30-19:30; Su 09:00-12:30",
+    "operator": "Groupement des Mousquetaires",
+    "shop": "supermarket",
+    "shop_1": "mall",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.intermarche.com/magasins/09113/joue-les-tours-37300/infos-pratiques"
+  }
+},
+{
+  "type": "way",
+  "id": 71107336,
+  "center": {
+    "lat": 47.3562860,
+    "lon": 0.6976914
+  },
+  "nodes": [
+    846649994,
+    3417262628,
+    846711587,
+    846686969,
+    846756051,
+    846700585,
+    846723686,
+    846727914,
+    846704836,
+    846684861,
+    846724410,
+    846713204,
+    846716656,
+    846710524,
+    846735349,
+    846692592,
+    846758686,
+    846723467,
+    846651274,
+    846704876,
+    846739944,
+    846716470,
+    846722632,
+    846714421,
+    846692315,
+    846762132,
+    3417262653,
+    3417262648,
+    3417262649,
+    3417262646,
+    3417262645,
+    3417262643,
+    3417262642,
+    3417262640,
+    9171678842,
+    9171678841,
+    9171678840,
+    846649994
+  ],
+  "tags": {
+    "alt_name": "Leclerc Joué Lès Tours",
+    "brand": "Centre Commercial E.Leclerc",
+    "brand:wikidata": "Q1273376",
+    "brand:wikipedia": "fr:E.Leclerc",
+    "building": "retail",
+    "name": "Centre Commercial E.Leclerc",
+    "opening_hours": "Mo-Sa 08:30-19:15; Su 09:30-12:15",
+    "operator": "E. Leclerc",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 74958391,
+  "center": {
+    "lat": 47.3807025,
+    "lon": 0.7281964
+  },
+  "nodes": [
+    885037475,
+    9732204630,
+    885112131,
+    9732204634,
+    884976563,
+    885091172,
+    885037475
+  ],
+  "tags": {
+    "building": "retail",
+    "check_date:opening_hours": "2025-10-07",
+    "contact:phone": "+33 2 47 46 40 40",
+    "contact:website": "https://www.chronodrive.com/magasins-chronodrive/drive-magasin-1008-st-pierre-des-corps",
+    "name": "Chronodrive",
+    "opening_hours": "Mo-Sa 07:30-20:30; Su 09:00-12:45",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "source:opening_hours": "website"
+  }
+},
+{
+  "type": "way",
+  "id": 74963221,
+  "center": {
+    "lat": 47.3890018,
+    "lon": 0.7187297
+  },
+  "nodes": [
+    535445554,
+    884944966,
+    884959451,
+    885119250,
+    885159431,
+    2550724703,
+    2550724700,
+    2550724702,
+    885045729,
+    884919204,
+    884989574,
+    885135451,
+    885085945,
+    535445554
+  ],
+  "tags": {
+    "access": "yes",
+    "branch": "Saint-Pierre-des-Corps",
+    "brand": "Lidl",
+    "brand:wikidata": "Q151954",
+    "building": "retail",
+    "emergency": "defibrillator",
+    "indoor": "yes",
+    "level": "0",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:00-20:00; Su 08:00-12:15",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262227647",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/saint-pierre-des-corps/place-maurice-thorez/",
+    "wikipedia": "fr:Lidl"
+  }
+},
+{
+  "type": "way",
+  "id": 74965124,
+  "center": {
+    "lat": 47.3965094,
+    "lon": 0.7445050
+  },
+  "nodes": [
+    884984884,
+    12215498466,
+    12215498465,
+    885155320,
+    884996895,
+    884984884
+  ],
+  "tags": {
+    "brand": "Netto",
+    "brand:wikidata": "Q2720988",
+    "brand:wikipedia": "fr:Netto",
+    "building": "retail",
+    "name": "Netto",
+    "opening_hours": "Mo-Fr 08:30-12:30,14:15-19:15; Sa 08:30-19:00; Su 09:00-12:30",
+    "operator": "Groupement des Mousquetaires",
+    "phone": "+33 2 47 44 41 05",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://magasin.netto.fr/144-netto-saint-pierre-des-corps"
+  }
+},
+{
+  "type": "way",
+  "id": 75324000,
+  "center": {
+    "lat": 47.3411611,
+    "lon": 0.7368294
+  },
+  "nodes": [
+    889372237,
+    889436385,
+    889446775,
+    889301939,
+    889281936,
+    889253767,
+    889402171,
+    889372147,
+    889315766,
+    889251923,
+    889253507,
+    889227888,
+    889273554,
+    889454848,
+    889287143,
+    889444548,
+    889237964,
+    889426781,
+    12066786881,
+    12066786890,
+    889372237
+  ],
+  "tags": {
+    "branch": "Saint Avertin",
+    "brand": "Auchan Supermarché",
+    "brand:wikidata": "Q105857776",
+    "building": "retail",
+    "name": "Auchan Supermarché",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:30",
+    "operator": "Auchan",
+    "phone": "+33 2 47 48 26 38",
+    "shop": "supermarket",
+    "shop_1": "mall",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.auchan.fr/magasins/supermarche/auchan-supermarche-saint-avertin/s-1027"
+  }
+},
+{
+  "type": "way",
+  "id": 75329542,
+  "center": {
+    "lat": 47.3661148,
+    "lon": 0.7193707
+  },
+  "nodes": [
+    889346477,
+    889227725,
+    889255916,
+    889321464,
+    889272495,
+    889413294,
+    889296051,
+    889410725,
+    889250954,
+    889346477
+  ],
+  "tags": {
+    "branch": "Saint Avertin",
+    "brand": "Lidl",
+    "brand:website": "http://www.lidl.fr",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "fr:Lidl",
+    "building": "retail",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:15",
+    "operator": "Lidl",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262205957",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/saint-avertin/avenue-des-fontaines-26/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 82053624,
+  "center": {
+    "lat": 48.0989113,
+    "lon": -0.7830819
+  },
+  "nodes": [
+    955725079,
+    955862845,
+    955794698,
+    955840219,
+    955828842,
+    955814580,
+    955810964,
+    955831959,
+    955809258,
+    955862690,
+    955837703,
+    955807855,
+    955843952,
+    955797940,
+    955841272,
+    955805409,
+    955865519,
+    955808870,
+    955840700,
+    955814414,
+    955813271,
+    955725079
+  ],
+  "tags": {
+    "addr:city": "Changé",
+    "addr:housenumber": "8",
+    "addr:postcode": "53810",
+    "addr:street": "Rue des Sablonniers",
+    "brand": "Carrefour Market",
+    "brand:wikidata": "Q2689639",
+    "brand:wikipedia": "fr:Carrefour Market",
+    "building": "yes",
+    "name": "Carrefour Market",
+    "opening_hours": "Mo-Sa 08:30-19:30",
+    "operator": "Carrefour",
+    "phone": "+33 2 43 56 56 62",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "website": "https://www.carrefour.fr/magasin/market-change-les-laval"
+  }
+},
+{
+  "type": "way",
+  "id": 197287785,
+  "center": {
+    "lat": 47.4273299,
+    "lon": 0.6591383
+  },
+  "nodes": [
+    2075540147,
+    2075540145,
+    2075540143,
+    2075540141,
+    2075540128,
+    2075540127,
+    2075540132,
+    2075540136,
+    2075540147
+  ],
+  "tags": {
+    "brand": "Auchan",
+    "brand:wikidata": "Q2870659",
+    "building": "retail",
+    "name": "Auchan Drive",
+    "opening_hours": "Mo-Sa 08:30-20:30; Su 09:00-12:30",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "website": "https://www.auchan.fr/magasins/drive/auchan-drive-saint-cyr-sur-loire-tours/s-871"
+  }
+},
+{
+  "type": "way",
+  "id": 209745485,
+  "center": {
+    "lat": 47.3450779,
+    "lon": 0.6620050
+  },
+  "nodes": [
+    846701058,
+    2199367844,
+    2199367846,
+    846725155,
+    846651797,
+    846701058
+  ],
+  "tags": {
+    "building": "retail",
+    "name": "Superette Al Siclani \"Corsaire\"",
+    "opening_hours": "Tu-Su 09:00-13:00",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2021"
+  }
+},
+{
+  "type": "way",
+  "id": 219338271,
+  "center": {
+    "lat": 48.0710276,
+    "lon": -0.7488799
+  },
+  "nodes": [
+    2285079280,
+    2285079304,
+    2285079306,
+    2285079309,
+    2285079319,
+    2285079325,
+    2285079326,
+    2285079329,
+    2285079347,
+    2285079343,
+    2285079301,
+    2285079280
+  ],
+  "tags": {
+    "addr:city": "Laval",
+    "addr:housenumber": "195",
+    "addr:postcode": "53000",
+    "addr:street": "Avenue Chanzy",
+    "brand": "Intermarché Super",
+    "brand:wikidata": "Q98278038",
+    "brand:wikipedia": "fr:Intermarché",
+    "building": "retail",
+    "drive_through": "yes",
+    "fax": "+33 243591909",
+    "name": "Intermarché Super",
+    "opening_hours": "Mo-Sa 08:30-20:00",
+    "operator": "Groupement des Mousquetaires",
+    "phone": "+33 243591900",
+    "shop": "supermarket",
+    "website": "https://www.intermarche.com/magasins/05765/laval-53000/infos-pratiques"
+  }
+},
+{
+  "type": "way",
+  "id": 219338285,
+  "center": {
+    "lat": 48.0719325,
+    "lon": -0.7446080
+  },
+  "nodes": [
+    2285079379,
+    2285079371,
+    2285079357,
+    2285079361,
+    2285079388,
+    2285079385,
+    2285079381,
+    2285079379
+  ],
+  "tags": {
+    "addr:housenumber": "24",
+    "addr:street": "Rue Saint-Melaine",
+    "brand": "Lidl",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "en:Lidl",
+    "building": "retail",
+    "check_date": "2026-09-20",
+    "check_date:opening_hours": "2026-09-20",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-19:30; Su 08:30-12:15",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262216095",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2013",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/laval/rue-saint-melaine-24/"
+  }
+},
+{
+  "type": "way",
+  "id": 245793770,
+  "center": {
+    "lat": 47.3439605,
+    "lon": 0.6438615
+  },
+  "nodes": [
+    2529175595,
+    2529175591,
+    2529175594,
+    2529175590,
+    2529175593,
+    9252708643,
+    5506471200,
+    2529175581,
+    5506471201,
+    9252708648,
+    2529175577,
+    2529175578,
+    2529175575,
+    2529175576,
+    2529175560,
+    2529175561,
+    2529175562,
+    2529175559,
+    2529175565,
+    6415630418,
+    2529175595
+  ],
+  "tags": {
+    "brand": "Super U",
+    "brand:wikidata": "Q2529029",
+    "brand:wikipedia": "fr:Système U",
+    "building": "retail",
+    "contact:housenumber": "18",
+    "contact:street": "Boulevard Des Bretonnieres",
+    "name": "Super U",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 09:00-12:30",
+    "phone": "+33 2 47 67 75 41",
+    "ref:FR:SIRET": "53107256900019",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2013",
+    "website": "https://www.magasins-u.com/magasin/superu-jouelestours.m36726"
+  }
+},
+{
+  "type": "way",
+  "id": 316972445,
+  "center": {
+    "lat": 47.3361617,
+    "lon": 0.7041186
+  },
+  "nodes": [
+    3231656080,
+    3231656079,
+    3231656067,
+    3231656066,
+    3231656062,
+    3231656064,
+    3231656080
+  ],
+  "tags": {
+    "brand": "Auchan Drive",
+    "brand:wikidata": "Q2870659",
+    "brand:wikipedia": "fr:Auchan Drive",
+    "building": "retail",
+    "check_date:opening_hours": "2026-08-28",
+    "drive_through": "only",
+    "name": "Auchan Drive",
+    "opening_hours": "Mo-Sa 07:30-20:30; Su 08:30-12:30",
+    "phone": "+33 2 47 80 83 69",
+    "shop": "supermarket",
+    "source:geometry": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+    "source:opening_hours": "website",
+    "website": "https://www.auchan.fr/magasins/drive/auchan-drive-chambray-les-tours/s-890"
+  }
+},
+{
+  "type": "way",
+  "id": 369700149,
+  "center": {
+    "lat": 47.3750850,
+    "lon": 0.6706991
+  },
+  "nodes": [
+    3734692736,
+    4054190028,
+    4054190029,
+    3765211918,
+    4054190024,
+    4054190023,
+    3734694058,
+    3765211914,
+    3734694054,
+    3765211920,
+    4054190031,
+    4054190025,
+    4054190026,
+    3734694060,
+    3734692736
+  ],
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:street": "Boulevard Louis-XI",
+    "brand": "Grand Frais",
+    "brand:wikidata": "Q3114675",
+    "building": "retail",
+    "check_date": "2026-01-24",
+    "check_date:opening_hours": "2026-08-16",
+    "name": "Grand Frais",
+    "opening_hours": "Mo-Sa 09:00-20:00; Su 09:00-12:30",
+    "panoramax": "f478975b-05ee-4e2e-886e-bcc7db14118c",
+    "phone": "+33 2 47 60 96 24",
+    "ref:FR:SIRET": "52330897100382",
+    "shop": "supermarket",
+    "source:opening_hours": "website",
+    "website": "https://www.grandfrais.com/magasins/tours"
+  }
+},
+{
+  "type": "way",
+  "id": 568682411,
+  "center": {
+    "lat": 47.3480287,
+    "lon": 0.6503035
+  },
+  "nodes": [
+    5470791436,
+    5470791512,
+    5470791437,
+    9238646003,
+    5470791438,
+    5470791439,
+    5470791440,
+    5470791441,
+    9238683163,
+    5470791442,
+    5470791443,
+    5470791444,
+    5470791445,
+    5470791446,
+    5470791436
+  ],
+  "tags": {
+    "brand": "Lidl",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "en:Lidl",
+    "building": "retail",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:15",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262220576",
+    "shop": "supermarket",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/joue-les-tours/boulevard-jean-jaures-195/"
+  }
+},
+{
+  "type": "way",
+  "id": 659062701,
+  "center": {
+    "lat": 47.3374499,
+    "lon": 0.6570992
+  },
+  "nodes": [
+    6170539553,
+    6170539554,
+    6170539555,
+    6170539556,
+    6170539553
+  ],
+  "tags": {
+    "branch": "Drive",
+    "brand": "Intermarché Drive",
+    "brand:wikidata": "Q3153200",
+    "brand:wikipedia": "fr:Intermarché",
+    "building": "retail",
+    "drive_through": "only",
+    "name": "Intermarché Drive",
+    "operator": "Groupement des Mousquetaires",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 669833454,
+  "center": {
+    "lat": 47.4315830,
+    "lon": 0.6690369
+  },
+  "nodes": [
+    6273089733,
+    6273089732,
+    9785563301,
+    9785563300,
+    6273089730,
+    9785563299,
+    9785563298,
+    9785563297,
+    9785563296,
+    9785563295,
+    9785563294,
+    6273089733
+  ],
+  "tags": {
+    "brand": "Grand Frais",
+    "brand:wikidata": "Q3114675",
+    "brand:wikipedia": "fr:Grand Frais",
+    "building": "commercial",
+    "name": "Grand Frais",
+    "opening_hours": "Mo-Sa 09:00-20:00; Su 09:00-12:30",
+    "phone": "+33 2 47 52 02 64",
+    "shop": "supermarket",
+    "website": "https://www.grandfrais.com/magasins/saint-cyr-sur-loire"
+  }
+},
+{
+  "type": "way",
+  "id": 673207950,
+  "center": {
+    "lat": 47.4192065,
+    "lon": 0.7164195
+  },
+  "nodes": [
+    11245337739,
+    6304403284,
+    6304403283,
+    6304403282,
+    6304403281,
+    6304403280,
+    6304403279,
+    6304403278,
+    6304403277,
+    6304403276,
+    12600924844,
+    7518392912,
+    6414590045,
+    7674256631,
+    7674256627,
+    7674256628,
+    7674256629,
+    7674256630,
+    12261084181,
+    11245337739
+  ],
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Daniel Mayer",
+    "brand": "Lidl",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "fr:Lidl",
+    "building": "commercial",
+    "contact:website": "https://www.lidl.fr/s/fr-FR/supermarches/tours/rue-daniel-mayer-1/",
+    "mapillary": "523891115302652",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:15",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262221939",
+    "shop": "supermarket",
+    "source": "Cadastre Fr",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 684729515,
+  "center": {
+    "lat": 47.3406583,
+    "lon": 0.7053911
+  },
+  "nodes": [
+    6415722323,
+    9180913666,
+    6415722324,
+    6415722325,
+    6415722326,
+    6415722327,
+    6415722328,
+    6415722323
+  ],
+  "tags": {
+    "brand": "Grand Frais",
+    "brand:wikidata": "Q3114675",
+    "brand:wikipedia": "fr:Grand Frais",
+    "building": "retail",
+    "name": "Grand Frais",
+    "opening_hours": "Mo-Sa 09:00-19:30; Su 09:00-12:30",
+    "phone": "+33 2 47 74 16 74",
+    "ref:FR:SIRET": "52330897100481",
+    "shop": "supermarket",
+    "website": "https://www.grandfrais.com/magasins/chambray-les-tours"
+  }
+},
+{
+  "type": "way",
+  "id": 784511011,
+  "center": {
+    "lat": 48.0678934,
+    "lon": -0.8039882
+  },
+  "nodes": [
+    7328910367,
+    7328910366,
+    7328910365,
+    7328910359,
+    7328910364,
+    7328910363,
+    7328910362,
+    7328910361,
+    7328910367
+  ],
+  "tags": {
+    "brand": "Lidl",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "en:Lidl",
+    "building": "retail",
+    "check_date": "2026-09-20",
+    "check_date:opening_hours": "2026-09-20",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:15",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262220444",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2020",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/saint-berthevin/rue-albert-thomas-5/"
+  }
+},
+{
+  "type": "way",
+  "id": 813484744,
+  "center": {
+    "lat": 47.4235281,
+    "lon": 0.6563214
+  },
+  "nodes": [
+    7598808258,
+    9327865173,
+    9327865172,
+    7598808257,
+    7598808256,
+    7598808253,
+    12285262610,
+    9327865170,
+    7598808258
+  ],
+  "tags": {
+    "brand": "Lidl",
+    "brand:wikidata": "Q151954",
+    "brand:wikipedia": "en:Lidl",
+    "building": "yes",
+    "name": "Lidl",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su 08:30-12:15",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "343262622",
+    "ref:FR:SIRET": "34326262223455",
+    "shop": "supermarket",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2021",
+    "website": "https://www.lidl.fr/s/fr-FR/supermarches/saint-cyr-sur-loire/boulevard-charles-de-gaulle-268/"
+  }
+},
+{
+  "type": "way",
+  "id": 1099978650,
+  "center": {
+    "lat": 48.0564758,
+    "lon": -0.7478564
+  },
+  "nodes": [
+    10069877229,
+    10069877232,
+    13821735803,
+    13691496187,
+    10069877233,
+    13691496175,
+    13691496160,
+    13691496159,
+    13691496158,
+    13691496157,
+    10069877234,
+    10069877229
+  ],
+  "tags": {
+    "addr:city": "Laval",
+    "addr:housenumber": "122",
+    "addr:postcode": "53000",
+    "addr:street": "Avenue de Tours",
+    "brand": "Grand Frais",
+    "brand:wikidata": "Q3114675",
+    "building": "yes",
+    "name": "Grand Frais",
+    "opening_hours": "Mo-Sa 09:00-19:30; Su 09:00-12:30",
+    "phone": "+33 2 43 49 07 07",
+    "shop": "supermarket",
+    "website": "https://www.grandfrais.com/magasins/laval-saint-nicolas"
+  }
+},
+{
+  "type": "way",
+  "id": 1551126793,
+  "center": {
+    "lat": 47.3391778,
+    "lon": 0.6996959
+  },
+  "nodes": [
+    826457869,
+    9300880427,
+    14107969932,
+    14107969930,
+    14107969929,
+    14107969926,
+    14107969923,
+    14107969922,
+    14107969933,
+    9310316616,
+    9310316615,
+    9310316613,
+    9310316611,
+    9310316608,
+    9310316609,
+    9310316606,
+    9310316602,
+    9310316603,
+    9310316600,
+    826356534,
+    826375376,
+    14107969934,
+    826438208,
+    9311226164,
+    826457869
+  ],
+  "tags": {
+    "brand": "Auchan",
+    "brand:wikidata": "Q758603",
+    "check_date:opening_hours": "2026-08-20",
+    "contact:city": "Chambray-lès-Tours",
+    "contact:postcode": "37170",
+    "indoor": "room",
+    "level": "0",
+    "name": "Auchan",
+    "opening_hours": "Mo-Sa 08:30-21:30; Su 08:30-12:30",
+    "phone": "+33 2 47 80 83 83",
+    "ref": "40",
+    "ref:FR:SIRET": "41040946001325",
+    "self_checkout": "yes",
+    "shop": "supermarket",
+    "source:opening_hours": "website",
+    "website": "https://www.auchan.fr/magasins/hypermarche/auchan-hypermarche-tours-sud-chambray/s-110",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1551740995,
+  "center": {
+    "lat": 47.4277398,
+    "lon": 0.6995578
+  },
+  "nodes": [
+    831228422,
+    831251250,
+    14115380555,
+    14115380554,
+    831240882,
+    831224580,
+    14115334892,
+    14115334896,
+    14115334895,
+    14115380502,
+    14115380501,
+    14115380558,
+    14115380503,
+    14115380505,
+    14115380515,
+    14115380516,
+    14115380517,
+    14115380511,
+    831223597,
+    831239363,
+    831244375,
+    831230824,
+    831225601,
+    831242499,
+    831238983,
+    831246331,
+    831243038,
+    831228422
+  ],
+  "tags": {
+    "brand": "Auchan",
+    "brand:wikidata": "Q758603",
+    "check_date": "2024-09-02",
+    "check_date:opening_hours": "2026-08-23",
+    "contact:city": "Tours",
+    "contact:housename": "Centre Commercial La Petite Arche",
+    "contact:postcode": "37100",
+    "contact:street": "RN10",
+    "indoor": "room",
+    "level": "0",
+    "name": "Auchan",
+    "opening_hours": "Mo-Sa 08:30-21:30; Su 08:30-12:30",
+    "operator:wikidata": "Q758603",
+    "operator:wikipedia": "fr:Auchan",
+    "phone": "+33 2 47 49 47 49",
+    "ref:FR:SIRET": "41040946001341",
+    "shop": "supermarket",
+    "source:opening_hours": "website",
+    "website": "https://www.auchan.fr/magasins/hypermarche/auchan-hypermarche-tours-nord/s-108",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1553991907,
+  "center": {
+    "lat": 47.3884451,
+    "lon": 0.6878341
+  },
+  "nodes": [
+    14138334755,
+    14138334754,
+    12330727480,
+    14138334753,
+    832505336,
+    12330716672,
+    832514944,
+    832532995,
+    14138334752,
+    14138334751,
+    14138334750,
+    14138334743,
+    14138334749,
+    14138334748,
+    14138334755
+  ],
+  "tags": {
+    "branch": "Tours Galerie Palais",
+    "brand": "Auchan Supermarché",
+    "brand:wikidata": "Q105857776",
+    "contact:city": "Tours",
+    "contact:housename": "Galerie du Palais",
+    "contact:housenumber": "19",
+    "contact:postcode": "37000",
+    "contact:street": "Place Jean Jaurès",
+    "indoor": "room",
+    "level": "0",
+    "name": "Auchan Supermarché",
+    "opening_hours": "Mo-Sa 08:45-21:00; Su 09:30-20:00",
+    "phone": "+33 2 47 60 11 60",
+    "ref:FR:SIRET": "40523461800016",
+    "shop": "supermarket",
+    "website": "https://www.auchan.fr/magasins/supermarche/auchan-supermarche-tours-galerie-palais/s-4105",
+    "wheelchair": "yes"
+  }
+}
+
+  ]
+}
