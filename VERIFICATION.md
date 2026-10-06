@@ -1,6 +1,6 @@
 # Vérification avant publication — 6 octobre 2026
 
-Cette révision n'a pas été déployée. La validation visuelle et les parcours dans un véritable navigateur restent à faire.
+La validation visuelle dans un véritable navigateur reste à faire. La capture utilisateur montre le fond raster sans les couches. Le build précédent ne livrait pas le worker MapLibre v6 à son URL attendue. Cette révision configure explicitement le worker et copie sa dépendance depuis la version installée avant chaque lancement/build.
 
 ## Corrections
 
@@ -32,3 +32,9 @@ Vérifications réussies :
 Dans un navigateur réel, à Laval et à Tours : rendu et chargement des tuiles, activation/désactivation de chaque couche, ordre visuel des couches, interactions entre éléments superposés, recherche IGN réelle, favoris persistants après rechargement, comparaison de quatre secteurs, téléchargement CSV, carte depuis un projet, tous les champs du simulateur, console sans erreur et affichage mobile/desktop.
 
 Les tests automatisés ci-dessus ne certifient pas ces éléments visuels. Aucun screenshot ni contrôle navigateur n'a été réalisé dans cet environnement.
+
+## Worker de production
+
+`node tests/worker.test.mjs` exécute le vrai fichier worker distribué dans un thread séparé, avec les globals hôtes nécessaires. Les fichiers livrés sont comparés octet par octet à la version MapLibre installée. Les sources GTFS lignes/arrêts, communes et points des deux villes produisent effectivement des tuiles GeoJSON non vides. Ce test ne remplace pas un rendu WebGL dans un navigateur.
+
+Le build doit livrer `maplibre-gl-worker.mjs` et `maplibre-gl-shared.mjs` ensemble sous `public/maplibre/`. Le fichier compilé de la carte configure `setWorkerUrl` vers ce chemin.

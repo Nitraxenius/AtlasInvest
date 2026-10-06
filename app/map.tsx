@@ -2,6 +2,8 @@
 import {useEffect,useRef,useState} from 'react';
 import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+// The v6 worker is a separate ESM asset. Both worker and shared module are copied before every dev/build.
+maplibregl.setWorkerUrl('/maplibre/maplibre-gl-worker.mjs');
 import type {Zone,Point} from '@/lib/analysis';
 export default function MapView({data,zones,points,layer,observed,showStops,showLines,showCampus,showServices,showProjects,selected,onSelect,onPoint,focus,polygon,setPolygon,draw,radius,setRadius,radiusMode}:{data:any;zones:Zone[];points:Point[];layer:string;observed:any;showStops:boolean;showLines:boolean;showCampus:boolean;showServices:boolean;showProjects:boolean;selected:string;onSelect:(id:string)=>void;onPoint:(p:any)=>void;focus:any;polygon:number[][];setPolygon:(p:number[][])=>void;draw:boolean;radius:any;setRadius:(r:any)=>void;radiusMode:boolean}){
  const container=useRef<HTMLDivElement>(null),map=useRef<maplibregl.Map|null>(null),[ready,setReady]=useState(false),[error,setError]=useState('');

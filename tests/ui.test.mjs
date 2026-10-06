@@ -27,14 +27,14 @@ function harness(file,overrides={}){
 function nodes(tree,predicate){const result=[];function walk(t){if(!t||typeof t!=='object')return;if(predicate(t))result.push(t);for(const c of [t.props?.children].flat(Infinity))walk(c)}walk(tree);return result}
 const find=(h,p)=>{const n=nodes(h.tree,p)[0];assert.ok(n,'Contrôle introuvable');return n};
 class FakeMap {static all=[];constructor(options){this.options=options;this.sources={};this.layers=[];this.events=[];this.visibility={};this.flights=[];FakeMap.all.push(this)}addControl(){}on(event,layer,fn){this.events.push({event,layer:typeof layer==='string'?layer:null,fn:fn||layer})}addSource(id,source){this.sources[id]={...source,setData:d=>this.sources[id].data=JSON.parse(JSON.stringify(d))}}getSource(id){assert.ok(this.sources[id],id);return this.sources[id]}addLayer(layer){this.layers.push(layer)}setLayoutProperty(id,key,value){assert.ok(this.layers.some(l=>l.id===id),id);this.visibility[id]=value}flyTo(v){this.flights.push(v)}getCanvas(){return {style:{}}}resize(){this.resized=true}remove(){this.removed=true}emit(event,layer,eventData){for(const e of this.events)if(e.event===event&&e.layer===layer)e.fn(eventData)}}
-const maplibre={Map:FakeMap,NavigationControl:class {},ScaleControl:class {}};
+let configuredWorker;const maplibre={setWorkerUrl:url=>configuredWorker=url,Map:FakeMap,NavigationControl:class {},ScaleControl:class {}};
 for(const city of ['laval','tours']){
  const h=harness('app/map.tsx',{maplibre});let selected,point,polygon,radius;
  const props={data:data[city],zones:analysis.buildZones(data[city],points,filters),points,layer:'price',observed:analysis.observedRents(data[city],filters),showStops:true,showLines:true,showCampus:true,showServices:true,showProjects:true,selected:'',onSelect:id=>selected=id,onPoint:p=>point=p,focus:{lon:data[city].config.center[0],lat:data[city].config.center[1]},polygon:[],setPolygon:p=>polygon=p,draw:false,radius:null,setRadius:r=>radius=r,radiusMode:false};
  hostMapAssertions(h,props,city);
 }
 function hostMapAssertions(h,props,city){
- h.render(props);const m=FakeMap.all.at(-1);assert.ok(m);m.emit('load',null);h.render(props);
+ h.render(props);const m=FakeMap.all.at(-1);assert.ok(m);assert.equal(configuredWorker,'/maplibre/maplibre-gl-worker.mjs');m.emit('load',null);h.render(props);
  assert.equal(spec.validateStyleMin({version:8,sources:Object.fromEntries(Object.entries(m.sources).map(([k,v])=>[k,{type:'geojson',data:v.data}])),layers:m.layers}).length,0);
  assert.equal(m.sources.lines.data.features.length,data[city].transport.lines.features.length);
  assert.equal(m.sources.stops.data.features.length,data[city].transport.stops.features.length);
