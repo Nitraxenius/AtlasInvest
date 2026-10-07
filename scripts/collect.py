@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Snapshots reproductibles. stdlib uniquement. python scripts/collect.py [--refresh]."""
-import csv, io, json, gzip, zipfile, urllib.request, concurrent.futures, datetime, pathlib, sys, re, math
+import csv, io, json, gzip, zipfile, urllib.request, concurrent.futures, datetime, pathlib, sys, re, math, os
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-RAW=ROOT/'data/raw'; OUT=ROOT/'public/data'
-RAW.mkdir(parents=True,exist_ok=True); OUT.mkdir(parents=True,exist_ok=True)
+RAW=pathlib.Path(os.environ.get('ATLAS_RAW',ROOT/'data/raw')); OUT=pathlib.Path(os.environ.get('ATLAS_OUTPUT',ROOT/'public/data'))
 NOW=datetime.datetime.now(datetime.timezone.utc).isoformat()
 REFRESH='--refresh' in sys.argv
 SOURCES=[]
-CONFIG={'laval':{'name':'Laval','epci':'200083392','department':'53','center':[-0.770,48.076],'budget':120000,'gtfs':'offre-de-transport-du-reseau-de-laval-agglomeration-gtfs'},'tours':{'name':'Tours','epci':'243700754','department':'37','center':[0.684,47.386],'budget':150000,'gtfs':'fil-bleu-syndicat-des-mobilites-gtfs-gtfs-rt'}}
+CONFIG=json.loads((ROOT/'config/cities.json').read_text(encoding='utf-8'))['cities']
 def fetch(url,name):
+ RAW.mkdir(parents=True,exist_ok=True)
  p=RAW/name
  if p.exists() and not REFRESH: return p.read_bytes()
  print('GET',name,flush=True)
@@ -27,6 +27,7 @@ def num(v):
 def parse_csv(b):
  try:s=b.decode('utf-8-sig')
  except UnicodeDecodeError:s=b.decode('cp1252')
+ if not s.strip():raise ValueError('Empty CSV source')
  delim=';' if s.splitlines()[0].count(';')>s.splitlines()[0].count(',') else ','
  return list(csv.DictReader(io.StringIO(s),delimiter=delim))
 def normalize(rows):
@@ -55,7 +56,7 @@ def normalize(rows):
   if len({x.get('numero_disposition') for x in rs})>1:reject('plusieurs dispositions');continue
   area=num(r['surface_reelle_bati']);lon=num(r['longitude']);lat=num(r['latitude'])
   if not area or area<=0 or price is None or price<=0:reject('surface ou prix invalide');continue
-  if lon is None or lat is None:reject('sans coordonnées');continue
+  if lon is None or lat is None or not -6<lon<10 or not 41<lat<52:reject('sans coordonnées');continue
   ppm=price/area
   if not 200<=ppm<=15000:reject('prix/m² atypique (200–15 000)');continue
   addr=' '.join(x for x in [r.get('adresse_numero'),r.get('adresse_suffixe'),r.get('adresse_nom_voie')] if x)
@@ -102,6 +103,7 @@ def gtfs(city,cfg):
  source(city+'-gtfs','Horaires théoriques '+cfg['name'],meta.get('organization',{}).get('name','Réseau local'),'https://transport.data.gouv.fr/datasets/'+cfg['gtfs'],res['url'],str(meta.get('license')),ds,'arrêt / ligne','GTFS : calendrier et exceptions du jour ; départs par arrêt, route et direction.','Pas de temps réel ni d’itinéraires à pied. Les départs sont des horaires théoriques.',updated=res.get('last_modified'))
  return {'stops':{'type':'FeatureCollection','features':features},'lines':{'type':'FeatureCollection','features':lines},'routes':compactRoutes,'serviceDate':date.isoformat(),'activeServices':len(service)}
 def run():
+ OUT.mkdir(parents=True,exist_ok=True)
  data={};jobs=[]
  for city,cfg in CONFIG.items():
   geo=json.loads(fetch(f"https://geo.api.gouv.fr/epcis/{cfg['epci']}/communes?fields=nom,code,population,centre,contour&format=geojson&geometry=contour",city+'-communes.json'))

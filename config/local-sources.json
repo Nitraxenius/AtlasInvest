@@ -1,0 +1,118 @@
+[
+  {
+    "id": "esiea",
+    "name": "ESIEA Laval",
+    "city": "laval",
+    "kind": "campus",
+    "address": "38 rue des Docteurs Calmette et Guérin Laval",
+    "source": "https://openlab.esiea.fr/",
+    "description": "École d’ingénieurs du numérique. Effectif local non intégré."
+  },
+  {
+    "id": "estaca",
+    "name": "ESTACA Laval",
+    "city": "laval",
+    "kind": "campus",
+    "address": "Rue Georges Charpak Changé 53810",
+    "source": "https://www.estaca.fr/contact/",
+    "description": "École d’ingénieurs spécialisée dans les transports. Capacité et effectif non utilisés pour prédire la demande."
+  },
+  {
+    "id": "iut-laval",
+    "name": "IUT Laval",
+    "city": "laval",
+    "kind": "campus",
+    "address": "52 rue des Docteurs Calmette et Guérin Laval",
+    "source": "https://www.laval.fr/annuaire-structures/institut-universitaire-de-technologie-iut-laval-7835",
+    "description": "Institut universitaire de technologie ; adresse confirmée par l’annuaire de la Ville de Laval."
+  },
+  {
+    "id": "ferrie",
+    "name": "Pôle santé-social Ferrié",
+    "city": "laval",
+    "kind": "campus",
+    "address": "65 rue du Chef de Bataillon Henri Géret Laval",
+    "source": "https://www.chlaval.fr/app/uploads/2025/12/LIVRET-JPO-26.pdf",
+    "description": "Instituts de formation du pôle santé-social ; effectif non intégré."
+  },
+  {
+    "id": "tanneurs",
+    "name": "Université · Tanneurs",
+    "city": "tours",
+    "kind": "campus",
+    "address": "3 rue des Tanneurs Tours",
+    "source": "https://www.univ-tours.fr/plans-dacces/site-des-tanneurs",
+    "description": "Site universitaire des Tanneurs."
+  },
+  {
+    "id": "portalis",
+    "name": "Université · Deux-Lions",
+    "city": "tours",
+    "kind": "campus",
+    "address": "50 avenue Jean Portalis Tours",
+    "source": "https://www.univ-tours.fr/plans-dacces/site-deux-lions",
+    "description": "Site Deux-Lions / Portalis."
+  },
+  {
+    "id": "grandmont",
+    "name": "Université · Grandmont",
+    "city": "tours",
+    "kind": "campus",
+    "address": "Avenue Monge Tours",
+    "source": "https://sciences.univ-tours.fr/version-francaise/presentation/plan-dacces",
+    "description": "Sciences et techniques ; point indicatif sur l’avenue du campus."
+  },
+  {
+    "id": "uco-future",
+    "name": "Nouveau bâtiment UCO",
+    "city": "laval",
+    "kind": "project",
+    "address": "Rue Marie Curie Changé 53810",
+    "source": "https://www.agglo-laval.fr/autres/actualites/un-nouveau-batiment-pour-lenseignement-superieur-12691",
+    "status": "chantier annoncé par la collectivité",
+    "year": 2027,
+    "capacity": 600,
+    "description": "Ouverture prévue rentrée 2027. Capacité annoncée : jusqu’à 600 étudiants. Il s’agit aussi d’un transfert du campus existant, pas de 600 étudiants supplémentaires."
+  },
+  {
+    "id": "saint-sauveur",
+    "name": "Campus Saint-Sauveur",
+    "city": "tours",
+    "kind": "project",
+    "address": "Rue Auguste Chevallier Tours",
+    "source": "https://www.esrre.fr/campus/campus-saint-sauveur",
+    "status": "commercialisation / permis modificatif en cours",
+    "year": 2028,
+    "capacity": 946,
+    "description": "Campus de 3 900 m² annoncé pour l’été 2028. Capacité ERP déclarative de 946 personnes ; établissements occupants et effectifs futurs non confirmés."
+  },
+  {
+    "id": "ch-laval",
+    "name": "Centre hospitalier de Laval",
+    "city": "laval",
+    "kind": "employment",
+    "address": "33 rue du Haut Rocher Laval",
+    "source": "https://www.chlaval.fr/venir-a-lhopital/",
+    "description": "Site principal du centre hospitalier. Effectif de salariés non intégré."
+  },
+  {
+    "id": "trousseau",
+    "name": "CHU Trousseau",
+    "city": "tours",
+    "kind": "employment",
+    "address": "Avenue de la République Chambray-lès-Tours",
+    "source": "https://www.chu-tours.fr/?page_id=44",
+    "description": "Site hospitalier. Point indicatif au niveau de l’avenue ; effectif non intégré."
+  },
+  {
+    "id": "tram2",
+    "name": "Tramway T2 · repère Grandmont",
+    "city": "tours",
+    "kind": "project",
+    "address": "Avenue Monge Tours",
+    "source": "https://lignes2tram.fr/les-nouvelles-lignes/la-ligne-2-de-tramway/",
+    "status": "projet en travaux / échéance annoncée",
+    "year": 2028,
+    "description": "Ligne 2 annoncée à horizon 2028, desservant notamment Grandmont, Bretonneau et Trousseau. Repère au campus, pas une station ni un tracé géométrique certifié."
+  }
+]

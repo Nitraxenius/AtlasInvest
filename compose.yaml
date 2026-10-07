@@ -1,0 +1,69 @@
+name: atlas-invest
+services:
+  web:
+    build: .
+    ports: ["${ATLAS_WEB_BIND:-127.0.0.1}:${ATLAS_WEB_PORT:-3000}:3000"]
+    environment:
+      ATLAS_DATA_URL: http://data:8787
+      ATLAS_DATA_READ_TOKEN: ${ATLAS_READ_TOKEN:-}
+    depends_on:
+      data: {condition: service_healthy}
+    restart: unless-stopped
+    mem_limit: ${ATLAS_WEB_MEMORY:-2g}
+    cpus: ${ATLAS_WEB_CPUS:-2}
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3000/api/atlas/manifest').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 20s
+      start_period: 60s
+    networks: [atlas]
+  data:
+    build: {context: ., dockerfile: Dockerfile.data}
+    environment:
+      ATLAS_READ_TOKEN: ${ATLAS_READ_TOKEN:-}
+      ATLAS_CORS_ORIGINS: ${ATLAS_CORS_ORIGINS:-}
+    volumes: ["atlas-state:/state", "atlas-backups:/backups"]
+    restart: unless-stopped
+    mem_limit: ${ATLAS_DATA_MEMORY:-1g}
+    cpus: ${ATLAS_DATA_CPUS:-1}
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8787/health',timeout=5)"]
+      interval: 30s
+      timeout: 10s
+    networks: [atlas]
+  scheduler:
+    build: {context: ., dockerfile: Dockerfile.data}
+    command: [python, -m, service.scheduler]
+    volumes: ["atlas-state:/state"]
+    environment:
+      OLLAMA_URL: ${OLLAMA_URL:-http://ollama:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-}
+    depends_on:
+      data: {condition: service_healthy}
+    restart: unless-stopped
+    mem_limit: ${ATLAS_COLLECTOR_MEMORY:-3g}
+    cpus: ${ATLAS_COLLECTOR_CPUS:-2}
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    healthcheck:
+      test: [CMD, python, -c, "from service.store import Store;import datetime;db=Store().db();r=db.execute(\"SELECT value FROM settings WHERE key='schedulerHeartbeat'\").fetchone();assert r and (datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.fromisoformat(r[0])).total_seconds()<900"]
+      interval: 60s
+      start_period: 120s
+    networks: [atlas]
+  ollama:
+    image: ollama/ollama:0.13.5
+    profiles: [ai]
+    volumes: ["atlas-models:/root/.ollama"]
+    restart: unless-stopped
+    mem_limit: ${ATLAS_AI_MEMORY:-4g}
+    networks: [atlas]
+volumes:
+  atlas-state:
+  atlas-models:
+  atlas-backups:
+networks:
+  atlas:

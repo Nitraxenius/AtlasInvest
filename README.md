@@ -1,57 +1,106 @@
-# Atlas Invest — Laval & Tours
+# Atlas Invest
 
-Application React/Vinext + MapLibre, snapshots publics datés. Aucun abonnement de données nécessaire pour les snapshots embarqués. Le projet est conservé dans le dépôt du Site.
+Carte de prospection immobilière pour Laval Agglomération et Tours Métropole. React, TypeScript et MapLibre ; API Python versionnée, SQLite et collecte automatique. Les ventes DVF sont historiques : Atlas ne fournit pas des annonces disponibles.
 
-## Mise à jour
+## Installation rapide avec Docker
 
-```sh
-python scripts/collect.py --refresh
-python scripts/enrich.py --refresh
-python scripts/context.py --refresh
+Prérequis : Git, Docker Engine avec Compose v2, ou Docker Desktop sous Windows avec WSL 2. Docker doit être démarré. Node et Python sur l’hôte ne sont pas nécessaires pour exécuter les conteneurs.
+
+### Windows — PowerShell
+
+```powershell
+git clone https://github.com/Nitraxenius/AtlasInvest.git
+cd AtlasInvest
+Copy-Item .env.example .env
+.\scripts\atlas.ps1 up -d --build
+.\scripts\atlas.ps1 exec -T data python -m service.manage bootstrap
+.\scripts\atlas.ps1 exec -T data python -m service.pipeline
+.\scripts\atlas.ps1 ps
 ```
 
-L’ordre importe : collecte de base, campus/permis, OLL/LOVAC. Les ressources brutes sont conservées dans `data/raw` ; les snapshots distribués sont dans `public/data`. Sans `--refresh`, les téléchargements déjà présents sont réutilisés. Les référentiels upstream peuvent réviser des millésimes anciens. Après collecte, republier le Site pour exposer le nouveau snapshot. Aucun rafraîchissement automatique n’est activé.
-
-`scripts/collect.py` configure les EPCI, centres cartographiques, départements et jeux GTFS. Ajouter une ville implique également de configurer ses points et compléments locaux. Il ne s’agit pas encore d’un connecteur national universel.
-
-## Lancer et vérifier
-
-Installer avec le gestionnaire déclaré dans package.json. `pnpm dev` pour le développement hors environnement supervisé ; `pnpm build` produit le Worker Cloudflare.
+### Linux / macOS
 
 ```sh
-python tests/test_collect.py
-node --experimental-strip-types tests/analysis.test.mjs
-pnpm exec tsc --noEmit
+git clone https://github.com/Nitraxenius/AtlasInvest.git
+cd AtlasInvest
+cp .env.example .env
+docker compose up -d --build
+docker compose exec -T data python -m service.manage bootstrap
+docker compose exec -T data python -m service.pipeline
+docker compose ps
 ```
 
-## Méthodes
+Ouvrir **http://127.0.0.1:3000**. Le premier build télécharge les dépendances ; la première collecte nécessite Internet. Le bootstrap sert les snapshots inclus ; la collecte suivante récupère et valide les sources réelles. Un connecteur indisponible conserve ses dernières données valides et signale l’erreur dans Sources.
 
-- DVF 2021–2025 : une mutation, un logement interprétable ; mutations complexes exclues, prix jamais multiplié par le nombre de lignes. Signature des locaux fondée sur parcelle, adresse, type, surface, pièces et lots. Le prix peut inclure des dépendances. Des locaux identiques peuvent rester indiscernables : cette méthode n’est pas une estimation notariale.
-- Mailles carrées de 750 m approchés à la latitude de chaque ville. Aucun quartier fictif. Nom du secteur basé sur la rue la plus représentée dans les transactions.
-- Prix indicatif d’entrée : médiane €/m² × milieu de la plage de surface demandée. Ce montant n’est pas le prix d’une annonce. Budget total : ajout d’une hypothèse de 8 % de frais, sans travaux ; le simulateur permet les montants exacts.
-- Quartiles interpolés. Historique à composition variable, minimum 8 ventes par année. L’année choisie filtre également l’historique. Les extrêmes DVF hors 200–15 000 €/m² sont exclus et comptabilisés.
-- ANIL : estimations de loyers d’annonce CC, appartement type T1–T2 non meublé 37 m² au T3 2025. Aucune conversion HC ni extrapolation automatique par surface. `TYPPRED` précise commune ou maille de communes. Attribution : Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin.
-- OLL Tours 2024 : 3 polygones officiels, statistiques HC segmentées ; affectation d’un centre de maille à une zone, sans interpolation dans le quartier. La couche OLL conserve les contours officiels. Laval : aucun OLL trouvé dans les fichiers nationaux 2024/2025 consultés.
-- GTFS : arrêts, tracés, lignes, calendriers et exceptions importés ; horaires théoriques actifs à la date de collecte. Intervalles du matin calculés séparément par route et sens ; pas d’itinéraire multimodal ni de temps de marche. Les distances sont à vol d’oiseau.
-- Sitadel : tous les permis de logements des communes centres téléchargés ; carte limitée aux programmes ≥20 logements autorisés depuis 2023, états 2/5/6. Codes 2 autorisé, 5 commencé, 6 terminé selon dictionnaire SDES. Nombre de logements = offre potentielle, jamais preuve de demande. Dates de livraison inconnues. Communes périphériques non couvertes par ce connecteur initial de permis.
-- Géocodage IGN : contrôler commune/EPCI, conserver type de résultat et précision. Un résultat de type rue ne localise pas précisément un bâtiment.
-- LOVAC : vacance du parc privé administrative par commune ; pas vacance locative ni rendement. Secret statistique conservé.
-- Géorisques : tentative API v1 échouée (502) lors de cette réalisation ; aucune absence de risque n’est déduite. Consultation officielle proposée. DPE de lot non attribué ; PLU/IRIS et recensement détaillé non intégrés dans cette version.
+La collecte quotidienne démarre à **04:00 Europe/Paris**, tant que le PC et Docker fonctionnent. Une promotion validée apparaît sur la carte au prochain polling, sans rebuild. Les favoris et critères restent dans le navigateur.
 
-## Indice de prospection
+## Configurer le futur PC
 
-Disponible uniquement si les campus sont renseignés, les trois dimensions existent, les poids totalisent plus de zéro et le seuil de ventes est atteint. Les poids sont modifiables ; la stratégie étudiante privilégie la proximité. Coût = `clamp(100 × (1 − prix indicatif / (budget × 1.5)), 0, 100)` ; proximité = `max(0, 100 × (1 − distance campus / 5000))` ; profondeur des comparables = `min(100, n/40 × 100)`.
+Modifier `.env` pour le port, les limites CPU/RAM et le modèle facultatif. Les plafonds mémoire restent réglables ; ils ne dépendent pas de la RAM du PC de développement. Le port web est limité à localhost par défaut. API et Ollama n’exposent aucun port hôte.
 
-Cet indice ne prétend pas classer intégralement la rentabilité ni le potentiel futur : demande, risques, qualité du bâti et rendement constaté ne sont pas couverts. Les poids affichés expliquent les résultats. Rendement cartographique seulement à partir d’une hypothèse HC explicitement saisie.
+Configurer les villes dans `config/cities.json` et les sources locales dans `config/local-sources.json`. Ajouter un territoire peut nécessiter un connecteur local : la couverture n’est pas universelle.
 
-## Limites et persistance
+## Mise à jour du logiciel
 
-Favoris et critères dans localStorage : propres à cet appareil, pas synchronisés. Jusqu’à 4 secteurs comparés ; exports CSV complets. Transactions téléchargées une fois par agglomération (environ quelques Mo compressés), points affichés seulement à zoom élevé ; une API PostGIS paginée sera adaptée à une couverture nationale. GeoJSON maintenu séparé du frontend pour permettre cette migration.
+Sauvegarder avant une mise à jour. Sous Windows, remplacer `docker compose` par `.\scripts\atlas.ps1` si Docker n’est pas dans le PATH.
 
-Fournisseur de tuiles configurable au build avec `NEXT_PUBLIC_MAP_TILES` (template `{z}/{x}/{y}`). Par défaut OSM raster, attribution visible, requêtes navigateur avec référent, aucun préchargement massif ni mode hors ligne. À grande échelle, configurer un fournisseur ou une infrastructure dédiée suivant les conditions de service.
+```sh
+docker compose exec -T data python -m service.manage backup /backups/avant-mise-a-jour
+git pull --ff-only
+docker compose up -d --build
+docker compose ps
+```
 
-WebMCP facultatif : `configure_investment_map`, détecté côté navigateur. Validation navigateur indisponible dans cet environnement ; outil non requis pour l’interface.
+Les volumes conservent données et versions lors du remplacement des images. Ne pas utiliser `docker compose down -v` pour une mise à jour.
 
-Les snapshots DVF ne sont pas exposés sous forme de pages indexables par transaction. Aucun nom de propriétaire n’est récupéré ou affiché. Respecter les conditions de réutilisation et ne pas chercher à réidentifier les personnes.
+```sh
+docker compose logs --tail 100 scheduler
+docker compose exec -T data python -m service.pipeline
+docker compose exec -T data python -m service.manage status
+docker compose stop
+docker compose up -d
+```
 
-Les références ANIL 2025 sont sélectionnées selon la typologie : appartement 1–2 pièces (37 m²), 3 pièces et plus (72 m²), ensemble des appartements (52 m²) ou maison (92 m²). Il s’agit de logements de référence, sans extrapolation automatique à la surface du bien.
+## IA locale facultative
+
+Les imports structurés et calculs fonctionnent sans IA. Pour démarrer Ollama et installer le petit modèle testé :
+
+```sh
+docker compose --profile ai up -d ollama
+docker compose exec -T ollama ollama pull qwen2.5:1.5b
+docker compose exec -T -e OLLAMA_MODEL=qwen2.5:1.5b data python -m service.ai_check
+```
+
+Renseigner `OLLAMA_MODEL` dans `.env`, puis recréer le scheduler pour activer l’extraction documentaire automatique. Les sorties restent proposées en file de revue ; elles ne modifient pas automatiquement prix, loyers, scores ou carte.
+
+## Documentation
+
+- [Exploitation, synchronisation, sauvegarde, restauration et rollback](docs/OPERATIONS.md)
+- [Catalogue des sources et limites](docs/SOURCES.md)
+- [Tests exécutés, mesures et limites restantes](docs/VALIDATION.md)
+- [Méthodologie du snapshot initial](docs/METHODOLOGY.md)
+- [Historique des versions](CHANGELOG.md)
+
+## Développement et tests
+
+Node 22.13 ou supérieur, pnpm 11.25 et Python 3.14. Respecter le lockfile :
+
+```sh
+pnpm install --frozen-lockfile
+python -m venv .venv
+# Activer .venv selon le système, puis :
+python -m pip install -r requirements.txt
+pnpm dev
+python -m unittest tests.test_collect tests.test_service
+node tests/analysis.test.mjs
+node tests/ui.test.mjs
+node tests/worker.test.mjs
+```
+
+Les tests navigateur nécessitent Playwright et un navigateur Edge installé ; configurer `ATLAS_PLAYWRIGHT` si son package n’est pas dans le chemin de la machine initiale. Voir le guide d’exploitation. Le build Docker utilise Next standalone en production ; le build Vinext/Sites existant est conservé.
+
+## Données et publication
+
+Les snapshots embarqués et le cache initial sont des données publiques datées, avec attribution dans le catalogue. Les nouveaux caches, volumes, modèles, sauvegardes et secrets ne sont pas versionnés. Les licences des sources restent distinctes de celles des dépendances.
+
+Le déploiement Docker et le Site public sont deux cibles séparées. Une collecte locale ne republie pas le Site. Le branchement Sites exige une API HTTPS accessible depuis son serveur ; voir le guide d’exploitation.

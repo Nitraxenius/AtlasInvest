@@ -1,0 +1,14 @@
+name: atlas-fixture
+services:
+  web:
+    image: atlas-invest-web:latest
+    ports: ["127.0.0.1:3001:3000"]
+    environment: {ATLAS_DATA_URL: "http://data:8787"}
+    depends_on: [data]
+  data:
+    image: atlas-invest-data:latest
+    command: [python, -m, service.demo, serve]
+    environment: {ATLAS_STATE: /state/fixture, ATLAS_BIND: 0.0.0.0}
+    volumes: ["fixture-state:/state"]
+volumes:
+  fixture-state:

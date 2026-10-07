@@ -44,3 +44,10 @@ next-env.d.ts
 /.codex/
 /outputs/
 /work/
+/.atlas-state/
+__pycache__/
+!.env.example
+/.venv/
+*.tsbuildinfo
+# Les fichiers déjà présents appartiennent au cache public initial.
+/data/raw/

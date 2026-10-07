@@ -1,0 +1,14 @@
+FROM python:3.14-slim
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends tzdata && rm -rf /var/lib/apt/lists/* && useradd -u 10001 -m atlas
+COPY service service
+COPY scripts scripts
+COPY config config
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY public/data public/data
+RUN mkdir /state /backups && chown atlas:atlas /state /backups
+ENV ATLAS_STATE=/state PYTHONUNBUFFERED=1 ATLAS_BIND=0.0.0.0
+USER atlas
+EXPOSE 8787
+CMD ["python","-m","service.api"]

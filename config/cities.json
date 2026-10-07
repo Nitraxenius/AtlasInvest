@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "schedule": {
+    "timezone": "Europe/Paris",
+    "hour": 4,
+    "minute": 0,
+    "retention": 8
+  },
+  "cities": {
+    "laval": {
+      "name": "Laval",
+      "commune": "53130",
+      "department": "53",
+      "epci": "200083392",
+      "center": [
+        -0.77,
+        48.076
+      ],
+      "budget": 120000,
+      "gtfs": "offre-de-transport-du-reseau-de-laval-agglomeration-gtfs",
+      "syncDays": 1,
+      "scopeLabel": "Agglomération"
+    },
+    "tours": {
+      "name": "Tours",
+      "commune": "37261",
+      "department": "37",
+      "epci": "243700754",
+      "center": [
+        0.684,
+        47.386
+      ],
+      "budget": 150000,
+      "gtfs": "fil-bleu-syndicat-des-mobilites-gtfs-gtfs-rt",
+      "syncDays": 1,
+      "scopeLabel": "Métropole"
+    }
+  }
+}
